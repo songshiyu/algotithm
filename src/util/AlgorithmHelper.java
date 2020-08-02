@@ -41,4 +41,13 @@ public class AlgorithmHelper {
         }
         return true;
     }
+
+    /**
+     * 数组元素交换位置
+     * */
+    public static <E> void swap(E[] arr,int i,int j){
+        E tmp = arr[i];
+        arr[i] = arr[j];
+        arr[j] = tmp;
+    }
 }

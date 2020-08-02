@@ -1,5 +1,7 @@
 package category.seleter;
 
+import util.AlgorithmHelper;
+import util.ArrayGenerator;
 import util.BaseAlgotithm;
 
 /**
@@ -8,7 +10,7 @@ import util.BaseAlgotithm;
  *
  * 选择排序
  **/
-public class Selecter extends BaseAlgotithm{
+public class SelecterSort extends BaseAlgotithm{
 
     @Override
     public <E extends Comparable<E>> void sort(E[] arr) {
@@ -28,5 +30,14 @@ public class Selecter extends BaseAlgotithm{
         E tmp = arr[i];
         arr[i] = arr[j];
         arr[j] = tmp;
+    }
+
+    public static void main(String[] args) {
+        Integer[] dataSizes = {10000,100000};
+
+        for (Integer dataSize:dataSizes){
+            Integer[] array = ArrayGenerator.generatorRandArray(dataSize, dataSize);
+            AlgorithmHelper.sort(SelecterSort.class,"SelecterSort",array);
+        }
     }
 }

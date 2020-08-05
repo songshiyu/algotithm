@@ -1,20 +1,18 @@
 package category.structure.array;
 
-import java.util.Arrays;
-
 /**
  * @description:
  * @E-mail: ssy3@meitu.com
  * @create: 2020/8/3 09:27:46
  **/
-public class MyArray {
+public class MyArray<E> {
 
-    private int[] data;
+    private E[] data;
     private int size;
 
     //构造函数，传入数组容量capacity构造MyArray
     public MyArray(int capacity) {
-        data = new int[capacity];
+        data = (E[]) new Object[capacity];
         this.size = 0;
     }
 
@@ -39,23 +37,24 @@ public class MyArray {
     }
 
     //向数组末尾添加元素
-    public void add(int e) {
+    public void add(E e) {
         add(size, e);
     }
 
     //向数组头部添加元素
-    public void addHead(int e) {
+    public void addHead(E e) {
         add(0, e);
     }
 
     //向数组的指定位置添加元素
-    public void add(int index, int e) {
-        if (size == data.length) {
-            throw new IllegalArgumentException("Add failed. Array is full");
+    public void add(int index, E e) {
+
+        if (index < 0 || index > size) {
+            throw new IllegalArgumentException("Add failed. required correct index.");
         }
 
-        if (index < 0 || index > data.length - 1) {
-            throw new IllegalArgumentException("Add failed. required correct index.");
+        if (size == data.length) {
+            resize(data.length * 2);
         }
 
         for (int i = size - 1; i >= index; i--) {
@@ -65,14 +64,14 @@ public class MyArray {
         size++;
     }
 
-    public int get(int index) {
+    public E get(int index) {
         if (index < 0 || index > data.length - 1) {
             throw new IllegalArgumentException("Add failed. required correct index.");
         }
         return data[index];
     }
 
-    public void set(int index, int e) {
+    public void set(int index, E e) {
         add(index, e);
     }
 
@@ -91,13 +90,99 @@ public class MyArray {
         return res.toString();
     }
 
+    /**
+     * 判断数组中是否包含某元素
+     */
+    public boolean contains(E e) {
+        for (int i = 0; i < size; i++) {
+            if (data[i].equals(e)) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    /**
+     * 查找数组中某元素的位置
+     */
+    public int findIndex(E e) {
+        for (int i = 0; i < size; i++) {
+            if (data[i].equals(e)) {
+                return i;
+            }
+        }
+        return -1;
+    }
+
+    /**
+     * 删除数组中的某个位置的元素，并返回元素
+     */
+    public E remove(int index) {
+        if (index < 0 || index >= size) {
+            throw new IllegalArgumentException("remove failed. index is illegal");
+        }
+
+        E ret = data[index];
+        for (int i = index + 1; i < size; i++) {
+            data[i - 1] = data[i];
+        }
+        data[size - 1] = null;     //删除无用的引用
+        size--;
+
+        if (size < data.length / 2){
+            resize(data.length / 2);
+        }
+        return ret;
+    }
+
+    /**
+     * 删除数组的第一个元素
+     */
+    public E removeFist() {
+        return remove(0);
+    }
+
+    /**
+     * 删除数组的最后一个元素
+     */
+    public E removeLast() {
+        return remove(size - 1);
+    }
+
+    /**
+     * 删除数组中的指定元素
+     */
+    public void removeEle(E element) {
+        int index = findIndex(element);
+        if (index != -1) {
+            remove(index);
+        }
+    }
+
+    /**
+     * 当数组容量不够时，自动扩容为之前容量的2倍
+     * */
+    public void resize(int newCapacity) {
+        E[] newData = (E[]) new Object[newCapacity];
+        for (int i = 0; i < size; i++) {
+            newData[i] = data[i];
+        }
+        data = newData;
+    }
+
+
     public static void main(String[] args) {
-        MyArray myArray = new MyArray(11);
+        MyArray<Integer> myArray = new MyArray<>(10);
         for (int i = 0; i < 10; i++) {
             myArray.add(i);
         }
         System.out.println(myArray);
-        myArray.add(8, 13);
+
+        myArray.add(11);
+        System.out.println(myArray);
+        //myArray.remove(0);
+        myArray.removeEle(3);
+        myArray.removeEle(4);
         System.out.println(myArray);
     }
 }

@@ -1,5 +1,7 @@
 package category.structure.array;
 
+import category.pojo.Student;
+
 /**
  * @description:
  * @E-mail: ssy3@meitu.com
@@ -129,7 +131,7 @@ public class MyArray<E> {
         data[size - 1] = null;     //删除无用的引用
         size--;
 
-        if (size < data.length / 2){
+        if (size < data.length / 2 && data.length > 10){
             resize(data.length / 2);
         }
         return ret;
@@ -172,7 +174,7 @@ public class MyArray<E> {
 
 
     public static void main(String[] args) {
-        MyArray<Integer> myArray = new MyArray<>(10);
+       /* MyArray<Integer> myArray = new MyArray<>(10);
         for (int i = 0; i < 10; i++) {
             myArray.add(i);
         }
@@ -183,6 +185,15 @@ public class MyArray<E> {
         //myArray.remove(0);
         myArray.removeEle(3);
         myArray.removeEle(4);
-        System.out.println(myArray);
+        System.out.println(myArray);*/
+
+        MyArray<Student> array = new MyArray<>();
+        array.add(new Student("songshiyu",20));
+        array.add(new Student("liuweiming",18));
+        array.add(new Student("songshiyu1",21));
+        System.out.println(array);
+
+        array.remove(2);
+        System.out.println(array);
     }
 }

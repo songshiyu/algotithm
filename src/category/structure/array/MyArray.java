@@ -4,7 +4,6 @@ import category.pojo.Student;
 
 /**
  * @description:
- * @E-mail: ssy3@meitu.com
  * @create: 2020/8/3 09:27:46
  **/
 public class MyArray<E> {
@@ -131,7 +130,7 @@ public class MyArray<E> {
         data[size - 1] = null;     //删除无用的引用
         size--;
 
-        if (size < data.length / 2 && data.length > 10){
+        if (size == data.length / 4 && data.length / 2 != 0){
             resize(data.length / 2);
         }
         return ret;

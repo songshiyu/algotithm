@@ -40,7 +40,7 @@ public class MyArray<E> {
     }
 
     //向数组末尾添加元素
-    public void add(E e) {
+    public void addLast(E e) {
         add(size, e);
     }
 
@@ -184,9 +184,9 @@ public class MyArray<E> {
     public static void main(String[] args) {
 
         MyArray<Student> array = new MyArray<>();
-        array.add(new Student("songshiyu",20));
-        array.add(new Student("liuweiming",18));
-        array.add(new Student("songshiyu1",21));
+        array.addLast(new Student("songshiyu",20));
+        array.addLast(new Student("liuweiming",18));
+        array.addLast(new Student("songshiyu1",21));
         System.out.println(array);
 
         array.remove(2);

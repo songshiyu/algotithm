@@ -1,4 +1,4 @@
-package category.structure.impl;
+package category.structure.stack.impl;
 
 import category.structure.array.MyArray;
 import category.structure.stack.MyStack;
@@ -31,7 +31,7 @@ public class ArrayStack<E> implements MyStack<E>{
 
     @Override
     public void push(E e) {
-        myArray.add(e);
+        myArray.addLast(e);
     }
 
     @Override

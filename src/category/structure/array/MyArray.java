@@ -11,7 +11,9 @@ public class MyArray<E> {
     private E[] data;
     private int size;
 
-    //构造函数，传入数组容量capacity构造MyArray
+    /*
+     * 构造函数，传入数组容量capacity构造MyArray
+     * */
     public MyArray(int capacity) {
         data = (E[]) new Object[capacity];
         this.size = 0;
@@ -171,20 +173,15 @@ public class MyArray<E> {
         data = newData;
     }
 
+    public E getFirst(){
+        return get(0);
+    }
+
+    public E getLast(){
+        return get(size -1);
+    }
 
     public static void main(String[] args) {
-       /* MyArray<Integer> myArray = new MyArray<>(10);
-        for (int i = 0; i < 10; i++) {
-            myArray.add(i);
-        }
-        System.out.println(myArray);
-
-        myArray.add(11);
-        System.out.println(myArray);
-        //myArray.remove(0);
-        myArray.removeEle(3);
-        myArray.removeEle(4);
-        System.out.println(myArray);*/
 
         MyArray<Student> array = new MyArray<>();
         array.add(new Student("songshiyu",20));

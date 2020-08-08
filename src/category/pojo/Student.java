@@ -1,12 +1,10 @@
 package category.pojo;
 
-import org.omg.CORBA.INTERNAL;
 
 import java.util.Objects;
 
 /**
  * @description:
- * @E-mail: ssy3@meitu.com
  * @create: 2020/8/5 10:16:43
  **/
 public class Student implements Comparable<Object>{

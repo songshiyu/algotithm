@@ -9,22 +9,24 @@ import category.structure.queue.Myqueue;
  * 循环队列
  *     1.分别使用front、tail记录队列的头和尾
  *     2.因为是循环队列，因此可以使用(tail + 1) % data.length == front判断队列是否已满
+ *
+ *  使用size记录队列大小，且会浪费队列的一个空间。
  **/
-public class LoopQueue<E> implements Myqueue<E> {
+public class LoopQueue1<E> implements Myqueue<E> {
 
     private E[] data;
     private int size;
     private int front;
     private int tail;
 
-    public LoopQueue(int capacity){
+    public LoopQueue1(int capacity){
         data = (E[])new Object[capacity + 1];
         size = 0;
         front = 0;
         tail = 0;
     }
 
-    public LoopQueue(){
+    public LoopQueue1(){
         this(10);
     }
 
@@ -111,14 +113,14 @@ public class LoopQueue<E> implements Myqueue<E> {
 
     public static void main(String[] args) {
 
-        LoopQueue<Integer> loopQueue = new LoopQueue<>(5);
+        LoopQueue1<Integer> loopQueue1 = new LoopQueue1<>(5);
 
         for (int i = 0; i < 6; i++){
-            loopQueue.enqueue(i);
-            System.out.println(loopQueue);
+            loopQueue1.enqueue(i);
+            System.out.println(loopQueue1);
         }
 
-        loopQueue.dequeue();
-        System.out.println(loopQueue);
+        loopQueue1.dequeue();
+        System.out.println(loopQueue1);
     }
 }

@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4fe7156d-fb45-42ff-a8f4-5c0b74da99b5" name="Default" comment="">
+    <list default="true" id="4fe7156d-fb45-42ff-a8f4-5c0b74da99b5" name="Default" comment="自定义链表的增删改查">
+      <change afterPath="$PROJECT_DIR$/src/category/structure/stack/TestStack.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/category/structure/stack/impl/LinkedListStack.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/category/structure/linked/MainTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/structure/linked/MainTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/category/structure/linked/MyLinkedListUp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/structure/linked/MyLinkedListUp.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -30,12 +31,17 @@
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="E:/workplace" />
-    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="E:/workplace" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
   </component>
-  <component name="RunManager" selected="Application.MainTest">
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="category.structure.stack" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.TestStack">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
@@ -43,13 +49,13 @@
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <module />
     </configuration>
-    <configuration name="Insert" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="category.insertsort.Insert" />
+    <configuration name="LinkedListStack" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="category.structure.stack.impl.LinkedListStack" />
       <module name="algorithm" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="category.insertsort.*" />
+          <option name="PATTERN" value="category.structure.stack.impl.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -78,6 +84,20 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="category.structure.linked.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestStack" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="category.structure.stack.TestStack" />
+      <module name="algorithm" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="category.structure.stack.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -131,17 +151,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.Insert" />
       <item itemvalue="Application.LoopQueue2" />
       <item itemvalue="Application.TetsQueue" />
       <item itemvalue="Application.MainTest" />
+      <item itemvalue="Application.LinkedListStack" />
+      <item itemvalue="Application.TestStack" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.TestStack" />
+        <item itemvalue="Application.LinkedListStack" />
         <item itemvalue="Application.MainTest" />
         <item itemvalue="Application.TetsQueue" />
         <item itemvalue="Application.LoopQueue2" />
-        <item itemvalue="Application.Insert" />
       </list>
     </recent_temporary>
   </component>
@@ -202,7 +224,14 @@
       <option name="project" value="LOCAL" />
       <updated>1596850086230</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="自定义链表的增删改查">
+      <created>1597110409453</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1597110409453</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TodoView">
@@ -237,64 +266,54 @@
     <MESSAGE value="LeetCode - 第20题" />
     <MESSAGE value="~" />
     <MESSAGE value="merge" />
-    <option name="LAST_COMMIT_MESSAGE" value="merge" />
+    <MESSAGE value="自定义链表的增删改查" />
+    <option name="LAST_COMMIT_MESSAGE" value="自定义链表的增删改查" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="466" y="139" key="#com.intellij.ide.util.MemberChooser" timestamp="1597106720622">
+    <state x="466" y="139" key="#com.intellij.ide.util.MemberChooser" timestamp="1597111048970">
       <screen x="0" y="23" width="1440" height="813" />
     </state>
-    <state x="466" y="139" key="#com.intellij.ide.util.MemberChooser/0.23.1440.813@0.23.1440.813" timestamp="1597106720622" />
-    <state x="348" y="34" key="CommitChangelistDialog2" timestamp="1597110377493">
+    <state x="466" y="139" key="#com.intellij.ide.util.MemberChooser/0.23.1440.813@0.23.1440.813" timestamp="1597111048970" />
+    <state x="348" y="34" key="CommitChangelistDialog2" timestamp="1597110409334">
       <screen x="0" y="23" width="1440" height="813" />
     </state>
-    <state x="348" y="34" key="CommitChangelistDialog2/0.23.1440.813@0.23.1440.813" timestamp="1597110377493" />
-    <state width="1440" height="259" key="GridCell.Tab.0.bottom" timestamp="1597110223436">
+    <state x="348" y="34" key="CommitChangelistDialog2/0.23.1440.813@0.23.1440.813" timestamp="1597110409334" />
+    <state width="1440" height="189" key="GridCell.Tab.0.bottom" timestamp="1597111797076">
       <screen x="0" y="23" width="1440" height="813" />
     </state>
-    <state width="1440" height="259" key="GridCell.Tab.0.bottom/0.23.1440.813@0.23.1440.813" timestamp="1597110223436" />
-    <state width="1440" height="259" key="GridCell.Tab.0.center" timestamp="1597110223435">
+    <state width="1440" height="189" key="GridCell.Tab.0.bottom/0.23.1440.813@0.23.1440.813" timestamp="1597111797076" />
+    <state width="1440" height="189" key="GridCell.Tab.0.center" timestamp="1597111797074">
       <screen x="0" y="23" width="1440" height="813" />
     </state>
-    <state width="1440" height="259" key="GridCell.Tab.0.center/0.23.1440.813@0.23.1440.813" timestamp="1597110223435" />
-    <state width="1440" height="259" key="GridCell.Tab.0.left" timestamp="1597110223434">
+    <state width="1440" height="189" key="GridCell.Tab.0.center/0.23.1440.813@0.23.1440.813" timestamp="1597111797074" />
+    <state width="1440" height="189" key="GridCell.Tab.0.left" timestamp="1597111797073">
       <screen x="0" y="23" width="1440" height="813" />
     </state>
-    <state width="1440" height="259" key="GridCell.Tab.0.left/0.23.1440.813@0.23.1440.813" timestamp="1597110223434" />
-    <state width="1440" height="259" key="GridCell.Tab.0.right" timestamp="1597110223436">
+    <state width="1440" height="189" key="GridCell.Tab.0.left/0.23.1440.813@0.23.1440.813" timestamp="1597111797073" />
+    <state width="1440" height="189" key="GridCell.Tab.0.right" timestamp="1597111797075">
       <screen x="0" y="23" width="1440" height="813" />
     </state>
-    <state width="1440" height="259" key="GridCell.Tab.0.right/0.23.1440.813@0.23.1440.813" timestamp="1597110223436" />
-    <state width="1440" height="259" key="GridCell.Tab.1.bottom" timestamp="1597110176157">
+    <state width="1440" height="189" key="GridCell.Tab.0.right/0.23.1440.813@0.23.1440.813" timestamp="1597111797075" />
+    <state width="1440" height="199" key="GridCell.Tab.1.bottom" timestamp="1597111178806">
       <screen x="0" y="23" width="1440" height="813" />
     </state>
-    <state width="1440" height="259" key="GridCell.Tab.1.bottom/0.23.1440.813@0.23.1440.813" timestamp="1597110176157" />
-    <state width="1440" height="259" key="GridCell.Tab.1.center" timestamp="1597110176156">
+    <state width="1440" height="199" key="GridCell.Tab.1.bottom/0.23.1440.813@0.23.1440.813" timestamp="1597111178806" />
+    <state width="1440" height="199" key="GridCell.Tab.1.center" timestamp="1597111178805">
       <screen x="0" y="23" width="1440" height="813" />
     </state>
-    <state width="1440" height="259" key="GridCell.Tab.1.center/0.23.1440.813@0.23.1440.813" timestamp="1597110176156" />
-    <state width="1440" height="259" key="GridCell.Tab.1.left" timestamp="1597110176155">
+    <state width="1440" height="199" key="GridCell.Tab.1.center/0.23.1440.813@0.23.1440.813" timestamp="1597111178805" />
+    <state width="1440" height="199" key="GridCell.Tab.1.left" timestamp="1597111178805">
       <screen x="0" y="23" width="1440" height="813" />
     </state>
-    <state width="1440" height="259" key="GridCell.Tab.1.left/0.23.1440.813@0.23.1440.813" timestamp="1597110176155" />
-    <state width="1440" height="259" key="GridCell.Tab.1.right" timestamp="1597110176157">
+    <state width="1440" height="199" key="GridCell.Tab.1.left/0.23.1440.813@0.23.1440.813" timestamp="1597111178805" />
+    <state width="1440" height="199" key="GridCell.Tab.1.right" timestamp="1597111178806">
       <screen x="0" y="23" width="1440" height="813" />
     </state>
-    <state width="1440" height="259" key="GridCell.Tab.1.right/0.23.1440.813@0.23.1440.813" timestamp="1597110176157" />
+    <state width="1440" height="199" key="GridCell.Tab.1.right/0.23.1440.813@0.23.1440.813" timestamp="1597111178806" />
     <state x="417" y="229" key="git4idea.merge.GitPullDialog" timestamp="1597105489595">
       <screen x="0" y="23" width="1440" height="813" />
     </state>
     <state x="417" y="229" key="git4idea.merge.GitPullDialog/0.23.1440.813@0.23.1440.813" timestamp="1597105489595" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/category/structure/linked/MyLinkedListUp.java</url>
-          <line>155</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
   <component name="masterDetails">
     <states>

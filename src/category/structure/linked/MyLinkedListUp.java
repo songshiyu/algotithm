@@ -164,6 +164,16 @@ public class MyLinkedListUp<E> {
         return retNode.e;
     }
 
+    /**
+     * 删除链表中的第一个元素
+     * */
+    public E removeFirst(){
+        return remove(0);
+    }
+
+    public E removeLast(){
+        return remove(size -1);
+    }
 
     @Override
     public String toString() {

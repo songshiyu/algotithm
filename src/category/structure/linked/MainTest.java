@@ -12,10 +12,10 @@ public class MainTest {
 
         for (int i = 0; i < 5; i++) {
             linkedList.addFirst(i);
+            System.out.println(linkedList);
         }
 
-        linkedList.add(0,5);
-
+        linkedList.remove(3);
         System.out.println(linkedList);
 
     }

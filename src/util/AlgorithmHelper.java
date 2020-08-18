@@ -9,8 +9,8 @@ public class AlgorithmHelper {
 
     /**
      * 通用测试
-     * */
-    public static <E extends Comparable<E>> void sort(Class clazz,String className,E[] arr){
+     */
+    public static <E extends Comparable<E>> void sort(Class clazz, String className, E[] arr) {
 
         try {
             BaseAlgotithm algotithm = (BaseAlgotithm) clazz.getConstructor().newInstance();
@@ -22,7 +22,7 @@ public class AlgorithmHelper {
             if (!checkSort(arr)) {
                 throw new RuntimeException("Sort failed");
             }
-            System.out.println(String.format("%s: n = %d, 执行时间 = %f s", className,arr.length,time));
+            System.out.println(String.format("%s: n = %d, 执行时间 = %f s", className, arr.length, time));
 
         } catch (Exception e) {
             e.printStackTrace();
@@ -32,10 +32,10 @@ public class AlgorithmHelper {
 
     /**
      * 检查排序结果是否正确
-     * */
-    public static <E extends Comparable> boolean checkSort(E[] arr){
-        for (int i = 1; i < arr.length;i++){
-            if (arr[i-1].compareTo(arr[i]) > 0){
+     */
+    private static <E extends Comparable> boolean checkSort(E[] arr) {
+        for (int i = 1; i < arr.length; i++) {
+            if (arr[i - 1].compareTo(arr[i]) > 0) {
                 return false;
             }
         }
@@ -44,8 +44,8 @@ public class AlgorithmHelper {
 
     /**
      * 数组元素交换位置
-     * */
-    public static <E> void swap(E[] arr,int i,int j){
+     */
+    public static <E> void swap(E[] arr, int i, int j) {
         E tmp = arr[i];
         arr[i] = arr[j];
         arr[j] = tmp;

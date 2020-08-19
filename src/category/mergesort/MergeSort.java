@@ -24,7 +24,15 @@ public class MergeSort extends BaseAlgotithm {
         int mid = l + (r - l) / 2;
         sort(arr, l, mid);
         sort(arr, mid + 1, r);
-        merge(arr, l, mid, r);
+
+        /**
+         * 归并排序的第一种优化
+         * 因为两个数组是有序的，因此当前一个数组的最后一个元素小于后一个数组的第一个元素时
+         * 两个数组合并后，本身就是有序的，因为不需要进行merge的过程
+         * */
+        if (arr[mid].compareTo(arr[mid + 1]) > 0) {
+            merge(arr, l, mid, r);
+        }
     }
 
     //合并两个有序区间arr[l,mid],arr[mid + 1,r]

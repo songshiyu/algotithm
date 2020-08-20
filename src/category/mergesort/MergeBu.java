@@ -7,37 +7,33 @@ import util.BaseAlgotithm;
 import java.util.Arrays;
 
 /**
- * @description: 对归并排序算法内存上的优化，自顶向下的归并排序
- * @create: 2020/8/19 09:30:25
+ * @description: 自底向上的实现归并排序
+ * @create: 2020/8/20 09:00:36
  **/
-public class OptimizeMergeSort extends BaseAlgotithm {
-
+public class MergeBu extends BaseAlgotithm {
 
     @Override
     public <E extends Comparable<E>> void sort(E[] arr) {
-        E[] temp = Arrays.copyOfRange(arr, 0, arr.length);
-        sort(arr, 0, arr.length - 1, temp);
-    }
 
-    private <E extends Comparable<E>> void sort(E[] arr, int l, int r, E[] temp) {
-        if (l >= r) {
-            return;
-        }
+        int length = arr.length;
 
-        int mid = l + (r - l) / 2;
-        sort(arr, l, mid, temp);
-        sort(arr, mid + 1, r, temp);
+        E[] temp = Arrays.copyOf(arr, length);
 
-        if (arr[mid].compareTo(arr[mid + 1]) > 0) {
-            merge(arr, l, mid, r, temp);
+        //遍历合并的区间长度
+        for (int sz = 1; sz < length; sz += sz) {
+
+            //遍历合并的两个区间的起始位置 i
+            //合并 [i,i + sz - 1] 和 [i + sz,Math.min(i + sz + sz - 1,n -1)]
+            for (int i = 0; i + sz < length; i += sz + sz) {
+                if (arr[i + sz - 1].compareTo(arr[i + sz]) > 0) {
+                    merge(arr, i, i + sz - 1, Math.min(i + sz + sz - 1, length - 1), temp);
+                }
+            }
         }
     }
 
     private <E extends Comparable<E>> void merge(E[] arr, int l, int mid, int r, E[] temp) {
 
-        /**
-         * 此处对归并排序过程中内存的使用上进行了优化，不需要每次调用merge时去为temp开辟空间
-         * */
         System.arraycopy(arr, l, temp, 0, r - l + 1);
 
         int i = l, j = mid + 1;
@@ -62,6 +58,6 @@ public class OptimizeMergeSort extends BaseAlgotithm {
         int capacity = 100000;
         Integer[] array = ArrayGenerator.generatorRandArray(capacity, capacity);
 
-        AlgorithmHelper.sort(OptimizeMergeSort.class, "OptimizeMergeSort", array);
+        AlgorithmHelper.sort(MergeBu.class, "MergeBu", array);
     }
 }

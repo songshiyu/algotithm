@@ -9,6 +9,9 @@
 3.选择排序
 
 4.归并排序
+     
+    归并排序算法并不是原地排序算法，时间复杂度是O(nlogn)，空间复杂度是O(n)
+    leetcoe递归算法的应用：category.leetcode.swort.leetcode51.ReversePair
 
 二、数据结构
 

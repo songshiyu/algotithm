@@ -18,6 +18,10 @@ public class TetsQueue {
         LoopQueue1<Integer> loopQueue1 = new LoopQueue1<>();
         double loopQueueCostTime = testQueue(loopQueue1, capacity);
         System.out.println("LoopQueue1 cost time is:" + loopQueueCostTime);
+
+        LinkedListQueue<Integer> linkedListQueue = new LinkedListQueue<>();
+        double LinkedListQueueCostTime = testQueue(linkedListQueue, capacity);
+        System.out.println("LinkedListQueue cost time is:" + LinkedListQueueCostTime);
     }
 
     public static double testQueue(Myqueue myqueue, int capacity) {

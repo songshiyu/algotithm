@@ -1,4 +1,4 @@
-package category.seleter;
+package category.seletesort;
 
 import util.AlgorithmHelper;
 import util.ArrayGenerator;

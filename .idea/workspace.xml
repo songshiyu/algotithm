@@ -1,21 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4fe7156d-fb45-42ff-a8f4-5c0b74da99b5" name="Default" comment="自定义链表的增删改查">
-      <change afterPath="$PROJECT_DIR$/src/category/structure/stack/TestStack.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/category/structure/stack/impl/LinkedListStack.java" afterDir="false" />
+    <list default="true" id="4fe7156d-fb45-42ff-a8f4-5c0b74da99b5" name="Default" comment="1.leetcode203 添加本地测试&#10;2.使用递归对数组求和&#10;3.使用递归解决leetcode203">
+      <change afterPath="$PROJECT_DIR$/src/category/quicksort/UpgradeQuickSort.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/category/structure/linked/MyLinkedListUp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/structure/linked/MyLinkedListUp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/quicksort/QuickSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/quicksort/QuickSort.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
+        <option value="FxmlFile" />
         <option value="Class" />
       </list>
     </option>
@@ -23,14 +26,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="46" />
-    <option name="y" value="23" />
-    <option name="width" value="1394" />
-    <option name="height" value="877" />
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="1" />
   </component>
+  <component name="ProjectId" id="1fyYZCWBjGNR6ZcugZG6hFbZ3Nq" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="E:/workplace" />
@@ -41,7 +48,7 @@
       <recent name="category.structure.stack" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.TestStack">
+  <component name="RunManager" selected="Application.UpgradeQuickSort">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
@@ -49,13 +56,13 @@
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <module />
     </configuration>
-    <configuration name="LinkedListStack" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="category.structure.stack.impl.LinkedListStack" />
+    <configuration name="MergeBu" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="category.mergesort.MergeBu" />
       <module name="algorithm" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="category.structure.stack.impl.*" />
+          <option name="PATTERN" value="category.mergesort.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -63,13 +70,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LoopQueue2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="category.structure.queue.impl.LoopQueue2" />
+    <configuration name="QuickSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="category.quicksort.QuickSort" />
       <module name="algorithm" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="category.structure.queue.impl.*" />
+          <option name="PATTERN" value="category.quicksort.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -77,13 +84,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MainTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="category.structure.linked.MainTest" />
+    <configuration name="QuickSort2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="category.quicksort.QuickSort2" />
       <module name="algorithm" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="category.structure.linked.*" />
+          <option name="PATTERN" value="category.quicksort.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -91,13 +98,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestStack" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="category.structure.stack.TestStack" />
+    <configuration name="ReversePair" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="category.leetcode.swort.leetcode51.ReversePair" />
       <module name="algorithm" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="category.structure.stack.*" />
+          <option name="PATTERN" value="category.leetcode.swort.leetcode51.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -105,13 +112,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TetsQueue" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="category.structure.queue.impl.TetsQueue" />
+    <configuration name="UpgradeQuickSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="category.quicksort.UpgradeQuickSort" />
       <module name="algorithm" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="category.structure.queue.impl.*" />
+          <option name="PATTERN" value="category.quicksort.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -151,19 +158,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.LoopQueue2" />
-      <item itemvalue="Application.TetsQueue" />
-      <item itemvalue="Application.MainTest" />
-      <item itemvalue="Application.LinkedListStack" />
-      <item itemvalue="Application.TestStack" />
+      <item itemvalue="Application.ReversePair" />
+      <item itemvalue="Application.MergeBu" />
+      <item itemvalue="Application.QuickSort" />
+      <item itemvalue="Application.QuickSort2" />
+      <item itemvalue="Application.UpgradeQuickSort" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.TestStack" />
-        <item itemvalue="Application.LinkedListStack" />
-        <item itemvalue="Application.MainTest" />
-        <item itemvalue="Application.TetsQueue" />
-        <item itemvalue="Application.LoopQueue2" />
+        <item itemvalue="Application.UpgradeQuickSort" />
+        <item itemvalue="Application.QuickSort" />
+        <item itemvalue="Application.QuickSort2" />
+        <item itemvalue="Application.MergeBu" />
+        <item itemvalue="Application.ReversePair" />
       </list>
     </recent_temporary>
   </component>
@@ -181,6 +188,20 @@
       <workItem from="1596698107842" duration="5476000" />
       <workItem from="1596849839305" duration="5256000" />
       <workItem from="1597071126948" duration="13000" />
+      <workItem from="1597191854670" duration="218000" />
+      <workItem from="1597192379464" duration="1245000" />
+      <workItem from="1597194883808" duration="847000" />
+      <workItem from="1597196095029" duration="2539000" />
+      <workItem from="1597198801405" duration="824000" />
+      <workItem from="1597201329845" duration="11779000" />
+      <workItem from="1597364247306" duration="497000" />
+      <workItem from="1597623855786" duration="779000" />
+      <workItem from="1597710138664" duration="3719000" />
+      <workItem from="1597796630601" duration="3961000" />
+      <workItem from="1597883023104" duration="8536000" />
+      <workItem from="1597968774251" duration="6134000" />
+      <workItem from="1597977235557" duration="3878000" />
+      <workItem from="1597988673841" duration="598000" />
     </task>
     <task id="LOCAL-00001" summary="1.项目结构调整&#10;2.实现插入排序">
       <created>1596337821048</created>
@@ -231,17 +252,57 @@
       <option name="project" value="LOCAL" />
       <updated>1597110409453</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="1.使用链表实现栈&#10;2.数组实现栈与链表实现栈的性能对比">
+      <created>1597111889927</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1597111889927</updated>
+    </task>
+    <task id="LOCAL-00009" summary="1.使用链表实现队列&#10;2.解决leetcode第203题">
+      <created>1597198125813</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1597198125813</updated>
+    </task>
+    <task id="LOCAL-00010" summary="1.leetcode203 添加本地测试&#10;2.使用递归对数组求和&#10;3.使用递归解决leetcode203">
+      <created>1597287734148</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1597287734148</updated>
+    </task>
+    <task id="LOCAL-00011" summary="1.完成第一版递归排序&#10;2.添加任务计划，使用递归实现链表">
+      <created>1597717093132</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1597717093132</updated>
+    </task>
+    <task id="LOCAL-00012" summary="对归并排序进行优化&#10;  1.取出两个数组不必要的merge过程&#10;  2.对递归过程中空间的使用进行优化">
+      <created>1597802707984</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1597802707984</updated>
+    </task>
+    <task id="LOCAL-00013" summary="1.自底而上的实现递归排序&#10;2.剑指offser中第51题，查找数字中逆序对个数">
+      <created>1597893511709</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1597893511709</updated>
+    </task>
+    <task id="LOCAL-00014" summary="1.实现第一版快速排序&#10;   在测试过程中出现问题，若数组初始有序，可能会发送内存溢出，待解决">
+      <created>1597978031424</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1597978031424</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
-  </component>
-  <component name="TodoView">
-    <todo-panel id="selected-file">
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
-    <todo-panel id="all">
-      <are-packages-shown value="true" />
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -267,53 +328,95 @@
     <MESSAGE value="~" />
     <MESSAGE value="merge" />
     <MESSAGE value="自定义链表的增删改查" />
-    <option name="LAST_COMMIT_MESSAGE" value="自定义链表的增删改查" />
+    <MESSAGE value="1.使用链表实现栈&#10;2.数组实现栈与链表实现栈的性能对比" />
+    <MESSAGE value="1.使用链表实现队列&#10;2.解决leetcode第203题" />
+    <MESSAGE value="1.leetcode203 添加本地测试&#10;2.使用递归对数组求和&#10;3.使用递归解决leetcode203" />
+    <MESSAGE value="1.完成第一版递归排序&#10;2.添加任务计划，使用递归实现链表" />
+    <MESSAGE value="对归并排序进行优化&#10;  1.取出两个数组不必要的merge过程&#10;  2.对递归过程中空间的使用进行优化" />
+    <MESSAGE value="1.自底而上的实现递归排序&#10;2.剑指offser中第51题，查找数字中逆序对个数" />
+    <MESSAGE value="1.实现第一版快速排序&#10;   在测试过程中出现问题，若数组初始有序，可能会发送内存溢出，待解决" />
+    <option name="LAST_COMMIT_MESSAGE" value="1.实现第一版快速排序&#10;   在测试过程中出现问题，若数组初始有序，可能会发送内存溢出，待解决" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="466" y="139" key="#com.intellij.ide.util.MemberChooser" timestamp="1597111048970">
+    <state x="2061" y="174" key="#com.intellij.ide.util.MemberChooser" timestamp="1597979130676">
+      <screen x="1440" y="23" width="1920" height="1057" />
+    </state>
+    <state x="2061" y="174" key="#com.intellij.ide.util.MemberChooser/0.23.1440.813/1440.23.1920.1057@1440.23.1920.1057" timestamp="1597979130676" />
+    <state x="466" y="139" key="#com.intellij.ide.util.MemberChooser/0.23.1440.813@0.23.1440.813" timestamp="1597973494732" />
+    <state x="348" y="23" width="743" height="813" key="CommitChangelistDialog2" timestamp="1597978031117">
       <screen x="0" y="23" width="1440" height="813" />
     </state>
-    <state x="466" y="139" key="#com.intellij.ide.util.MemberChooser/0.23.1440.813@0.23.1440.813" timestamp="1597111048970" />
-    <state x="348" y="34" key="CommitChangelistDialog2" timestamp="1597110409334">
+    <state x="1904" y="23" key="CommitChangelistDialog2/0.23.1440.813/1440.23.1920.1057@1440.23.1920.1057" timestamp="1597893511540" />
+    <state x="348" y="23" width="743" height="813" key="CommitChangelistDialog2/0.23.1440.813@0.23.1440.813" timestamp="1597978031117" />
+    <state x="144" y="93" key="DiffContextDialog" timestamp="1597802660582">
       <screen x="0" y="23" width="1440" height="813" />
     </state>
-    <state x="348" y="34" key="CommitChangelistDialog2/0.23.1440.813@0.23.1440.813" timestamp="1597110409334" />
-    <state width="1440" height="189" key="GridCell.Tab.0.bottom" timestamp="1597111797076">
+    <state x="144" y="93" key="DiffContextDialog/0.23.1440.813@0.23.1440.813" timestamp="1597802660582" />
+    <state width="1398" height="151" key="GridCell.Tab.0.bottom" timestamp="1597988081185">
+      <screen x="1440" y="23" width="1920" height="1057" />
+    </state>
+    <state width="1398" height="202" key="GridCell.Tab.0.bottom/0.23.1440.813/1440.23.1920.1057@0.23.1440.813" timestamp="1597290446107" />
+    <state width="1398" height="151" key="GridCell.Tab.0.bottom/0.23.1440.813/1440.23.1920.1057@1440.23.1920.1057" timestamp="1597988081185" />
+    <state width="1398" height="343" key="GridCell.Tab.0.bottom/0.23.1440.813@0.23.1440.813" timestamp="1597978334173" />
+    <state width="1398" height="151" key="GridCell.Tab.0.center" timestamp="1597988081184">
+      <screen x="1440" y="23" width="1920" height="1057" />
+    </state>
+    <state width="1398" height="202" key="GridCell.Tab.0.center/0.23.1440.813/1440.23.1920.1057@0.23.1440.813" timestamp="1597290446106" />
+    <state width="1398" height="151" key="GridCell.Tab.0.center/0.23.1440.813/1440.23.1920.1057@1440.23.1920.1057" timestamp="1597988081184" />
+    <state width="1398" height="343" key="GridCell.Tab.0.center/0.23.1440.813@0.23.1440.813" timestamp="1597978334173" />
+    <state width="1398" height="151" key="GridCell.Tab.0.left" timestamp="1597988081183">
+      <screen x="1440" y="23" width="1920" height="1057" />
+    </state>
+    <state width="1398" height="202" key="GridCell.Tab.0.left/0.23.1440.813/1440.23.1920.1057@0.23.1440.813" timestamp="1597290446106" />
+    <state width="1398" height="151" key="GridCell.Tab.0.left/0.23.1440.813/1440.23.1920.1057@1440.23.1920.1057" timestamp="1597988081183" />
+    <state width="1398" height="343" key="GridCell.Tab.0.left/0.23.1440.813@0.23.1440.813" timestamp="1597978334173" />
+    <state width="1398" height="151" key="GridCell.Tab.0.right" timestamp="1597988081184">
+      <screen x="1440" y="23" width="1920" height="1057" />
+    </state>
+    <state width="1398" height="202" key="GridCell.Tab.0.right/0.23.1440.813/1440.23.1920.1057@0.23.1440.813" timestamp="1597290446107" />
+    <state width="1398" height="151" key="GridCell.Tab.0.right/0.23.1440.813/1440.23.1920.1057@1440.23.1920.1057" timestamp="1597988081184" />
+    <state width="1398" height="343" key="GridCell.Tab.0.right/0.23.1440.813@0.23.1440.813" timestamp="1597978334173" />
+    <state width="1398" height="151" key="GridCell.Tab.1.bottom" timestamp="1597988081187">
+      <screen x="1440" y="23" width="1920" height="1057" />
+    </state>
+    <state width="1398" height="202" key="GridCell.Tab.1.bottom/0.23.1440.813/1440.23.1920.1057@0.23.1440.813" timestamp="1597290446109" />
+    <state width="1398" height="151" key="GridCell.Tab.1.bottom/0.23.1440.813/1440.23.1920.1057@1440.23.1920.1057" timestamp="1597988081187" />
+    <state width="1398" height="151" key="GridCell.Tab.1.bottom/0.23.1440.813@0.23.1440.813" timestamp="1597977850628" />
+    <state width="1398" height="151" key="GridCell.Tab.1.center" timestamp="1597988081186">
+      <screen x="1440" y="23" width="1920" height="1057" />
+    </state>
+    <state width="1398" height="202" key="GridCell.Tab.1.center/0.23.1440.813/1440.23.1920.1057@0.23.1440.813" timestamp="1597290446108" />
+    <state width="1398" height="151" key="GridCell.Tab.1.center/0.23.1440.813/1440.23.1920.1057@1440.23.1920.1057" timestamp="1597988081186" />
+    <state width="1398" height="151" key="GridCell.Tab.1.center/0.23.1440.813@0.23.1440.813" timestamp="1597977850627" />
+    <state width="1398" height="151" key="GridCell.Tab.1.left" timestamp="1597988081186">
+      <screen x="1440" y="23" width="1920" height="1057" />
+    </state>
+    <state width="1398" height="202" key="GridCell.Tab.1.left/0.23.1440.813/1440.23.1920.1057@0.23.1440.813" timestamp="1597290446108" />
+    <state width="1398" height="151" key="GridCell.Tab.1.left/0.23.1440.813/1440.23.1920.1057@1440.23.1920.1057" timestamp="1597988081186" />
+    <state width="1398" height="151" key="GridCell.Tab.1.left/0.23.1440.813@0.23.1440.813" timestamp="1597977850627" />
+    <state width="1398" height="151" key="GridCell.Tab.1.right" timestamp="1597988081186">
+      <screen x="1440" y="23" width="1920" height="1057" />
+    </state>
+    <state width="1398" height="202" key="GridCell.Tab.1.right/0.23.1440.813/1440.23.1920.1057@0.23.1440.813" timestamp="1597290446108" />
+    <state width="1398" height="151" key="GridCell.Tab.1.right/0.23.1440.813/1440.23.1920.1057@1440.23.1920.1057" timestamp="1597988081186" />
+    <state width="1398" height="151" key="GridCell.Tab.1.right/0.23.1440.813@0.23.1440.813" timestamp="1597977850628" />
+    <state x="320" y="171" key="Vcs.Push.Dialog.v2" timestamp="1597978038927">
       <screen x="0" y="23" width="1440" height="813" />
     </state>
-    <state width="1440" height="189" key="GridCell.Tab.0.bottom/0.23.1440.813@0.23.1440.813" timestamp="1597111797076" />
-    <state width="1440" height="189" key="GridCell.Tab.0.center" timestamp="1597111797074">
+    <state x="1867" y="215" key="Vcs.Push.Dialog.v2/0.23.1440.813/1440.23.1920.1057@1440.23.1920.1057" timestamp="1597893518645" />
+    <state x="320" y="171" key="Vcs.Push.Dialog.v2/0.23.1440.813@0.23.1440.813" timestamp="1597978038927" />
+    <state x="100" y="123" width="1240" height="613" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1597624851820">
       <screen x="0" y="23" width="1440" height="813" />
     </state>
-    <state width="1440" height="189" key="GridCell.Tab.0.center/0.23.1440.813@0.23.1440.813" timestamp="1597111797074" />
-    <state width="1440" height="189" key="GridCell.Tab.0.left" timestamp="1597111797073">
+    <state x="100" y="123" width="1240" height="613" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.23.1440.813@0.23.1440.813" timestamp="1597624851820" />
+    <state x="417" y="229" key="git4idea.merge.GitPullDialog" timestamp="1597198133252">
       <screen x="0" y="23" width="1440" height="813" />
     </state>
-    <state width="1440" height="189" key="GridCell.Tab.0.left/0.23.1440.813@0.23.1440.813" timestamp="1597111797073" />
-    <state width="1440" height="189" key="GridCell.Tab.0.right" timestamp="1597111797075">
+    <state x="417" y="229" key="git4idea.merge.GitPullDialog/0.23.1440.813@0.23.1440.813" timestamp="1597198133252" />
+    <state x="385" y="160" width="670" height="676" key="search.everywhere.popup" timestamp="1597202281294">
       <screen x="0" y="23" width="1440" height="813" />
     </state>
-    <state width="1440" height="189" key="GridCell.Tab.0.right/0.23.1440.813@0.23.1440.813" timestamp="1597111797075" />
-    <state width="1440" height="199" key="GridCell.Tab.1.bottom" timestamp="1597111178806">
-      <screen x="0" y="23" width="1440" height="813" />
-    </state>
-    <state width="1440" height="199" key="GridCell.Tab.1.bottom/0.23.1440.813@0.23.1440.813" timestamp="1597111178806" />
-    <state width="1440" height="199" key="GridCell.Tab.1.center" timestamp="1597111178805">
-      <screen x="0" y="23" width="1440" height="813" />
-    </state>
-    <state width="1440" height="199" key="GridCell.Tab.1.center/0.23.1440.813@0.23.1440.813" timestamp="1597111178805" />
-    <state width="1440" height="199" key="GridCell.Tab.1.left" timestamp="1597111178805">
-      <screen x="0" y="23" width="1440" height="813" />
-    </state>
-    <state width="1440" height="199" key="GridCell.Tab.1.left/0.23.1440.813@0.23.1440.813" timestamp="1597111178805" />
-    <state width="1440" height="199" key="GridCell.Tab.1.right" timestamp="1597111178806">
-      <screen x="0" y="23" width="1440" height="813" />
-    </state>
-    <state width="1440" height="199" key="GridCell.Tab.1.right/0.23.1440.813@0.23.1440.813" timestamp="1597111178806" />
-    <state x="417" y="229" key="git4idea.merge.GitPullDialog" timestamp="1597105489595">
-      <screen x="0" y="23" width="1440" height="813" />
-    </state>
-    <state x="417" y="229" key="git4idea.merge.GitPullDialog/0.23.1440.813@0.23.1440.813" timestamp="1597105489595" />
+    <state x="385" y="160" width="670" height="676" key="search.everywhere.popup/0.23.1440.813/1440.23.1920.1057@0.23.1440.813" timestamp="1597202281294" />
   </component>
   <component name="masterDetails">
     <states>

@@ -30,7 +30,7 @@ public class QuickSort extends BaseAlgotithm {
     }
 
     /**
-     * 原地排序，选出一个中间位置j，j的左侧都比j小，j的右侧都比j大
+     * 原地排序，选出一个基准位置j，j的左侧都比j小，j的右侧都比j大
      */
     public <E extends Comparable<E>> int partition(E[] arr, int l, int r) {
 
@@ -48,10 +48,11 @@ public class QuickSort extends BaseAlgotithm {
 
     public static void main(String[] args) {
         int capacity = 1000000;
-        Integer[] array = ArrayGenerator.generatorRandArray(capacity, capacity);
+        Integer[] array = ArrayGenerator.generatorArray(capacity);
+        //Integer[] array = ArrayGenerator.generatorRandArray(capacity, capacity);
         Integer[] array2 = Arrays.copyOf(array, array.length);
 
-        AlgorithmHelper.sort(QuickSort.class,"QuickSort",array);
         AlgorithmHelper.sort(MergeSort.class,"MergeSort",array2);
+        AlgorithmHelper.sort(QuickSort.class,"QuickSort",array);
     }
 }

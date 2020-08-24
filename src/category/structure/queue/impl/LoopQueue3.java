@@ -6,8 +6,6 @@ import category.structure.queue.Myqueue;
 /**
  * @author songshiyu
  * @date 2020/8/8 10:41
- *
- * TODO => 不使用size记录队列大小，浪费一个队列空间
  **/
 public class LoopQueue3<E> implements Myqueue<E>{
 

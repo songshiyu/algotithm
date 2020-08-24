@@ -8,7 +8,7 @@ import util.BaseAlgotithm;
 import java.util.Arrays;
 
 /**
- * @description: 最初版快速排序，会有问题：当arr是一个有序数组时，时间复杂度为O(n^2),会造成栈溢出
+ * @description: 最初版快速排序，会有问题：当arr是一个有序数组时，时间复杂度为O(n^2),会有可能造成栈溢出
  * @create: 2020/8/21 09:31:23
  **/
 public class QuickSort extends BaseAlgotithm {

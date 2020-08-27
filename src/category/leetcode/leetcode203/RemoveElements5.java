@@ -1,7 +1,7 @@
 package category.leetcode.leetcode203;
 
 /**
- * @description:  TODO 将一下代码该为没有返回值的方法
+ * @description: 
  *   public ListNode removeElements(ListNode head, int val) {
  *
  *         if (head == null){

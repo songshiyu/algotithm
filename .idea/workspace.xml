@@ -1,18 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4fe7156d-fb45-42ff-a8f4-5c0b74da99b5" name="Default" comment="Merge">
-      <change afterPath="$PROJECT_DIR$/src/category/leetcode/leetcode215/Leetcode215.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/category/leetcode/leetcode75/Leetcode75QuickSort.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/category/leetcode/swort/leetcode40/Leetcode40.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/category/quicksort/QuickSortThreeWays.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/category/quicksort/SelectMinK.java" afterDir="false" />
+    <list default="true" id="4fe7156d-fb45-42ff-a8f4-5c0b74da99b5" name="Default" comment="1.实现快速排序之-三路快排&#10;2.TODO leetcode与快速排序有关">
+      <change afterPath="$PROJECT_DIR$/src/category/binarysearch/BinarySearchF.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/category/binarysearch/BinarySearchR.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/category/binarysearch/Leetcode704.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/algorithm/category/quicksort/UpgradeQuickSort.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/algorithm/category/quicksort/UpgradeQuickSort.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/algorithm/category/structure/queue/impl/LoopQueue3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/algorithm/category/structure/queue/impl/LoopQueue3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/category/leetcode/leetcode203/RemoveElements5.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/leetcode/leetcode203/RemoveElements5.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/category/quicksort/QuickSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/quicksort/QuickSort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/category/quicksort/UpgradeQuickSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/quicksort/UpgradeQuickSort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,6 +44,7 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="E:/workplace" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -211,7 +206,8 @@
       <workItem from="1597977235557" duration="3878000" />
       <workItem from="1597988673841" duration="598000" />
       <workItem from="1598228917684" duration="2206000" />
-      <workItem from="1598315116288" duration="4596000" />
+      <workItem from="1598315116288" duration="5575000" />
+      <workItem from="1598573757972" duration="3715000" />
     </task>
     <task id="LOCAL-00001" summary="1.项目结构调整&#10;2.实现插入排序">
       <created>1596337821048</created>
@@ -318,7 +314,14 @@
       <option name="project" value="LOCAL" />
       <updated>1598229019256</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="1.实现快速排序之-三路快排&#10;2.TODO leetcode与快速排序有关">
+      <created>1598493650006</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1598493650006</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -353,7 +356,8 @@
     <MESSAGE value="1.自底而上的实现递归排序&#10;2.剑指offser中第51题，查找数字中逆序对个数" />
     <MESSAGE value="1.实现第一版快速排序&#10;   在测试过程中出现问题，若数组初始有序，可能会发送内存溢出，待解决" />
     <MESSAGE value="Merge" />
-    <option name="LAST_COMMIT_MESSAGE" value="Merge" />
+    <MESSAGE value="1.实现快速排序之-三路快排&#10;2.TODO leetcode与快速排序有关" />
+    <option name="LAST_COMMIT_MESSAGE" value="1.实现快速排序之-三路快排&#10;2.TODO leetcode与快速排序有关" />
   </component>
   <component name="WindowStateProjectService">
     <state x="466" y="139" key="#com.intellij.ide.util.MemberChooser" timestamp="1598229095751">
@@ -361,39 +365,39 @@
     </state>
     <state x="2061" y="174" key="#com.intellij.ide.util.MemberChooser/0.23.1440.813/1440.23.1920.1057@1440.23.1920.1057" timestamp="1597979130676" />
     <state x="466" y="139" key="#com.intellij.ide.util.MemberChooser/0.23.1440.813@0.23.1440.813" timestamp="1598229095751" />
-    <state x="348" y="23" width="743" height="813" key="CommitChangelistDialog2" timestamp="1598229019009">
+    <state x="348" y="23" width="743" height="813" key="CommitChangelistDialog2" timestamp="1598493649819">
       <screen x="0" y="23" width="1440" height="813" />
     </state>
     <state x="1904" y="23" key="CommitChangelistDialog2/0.23.1440.813/1440.23.1920.1057@1440.23.1920.1057" timestamp="1597893511540" />
-    <state x="348" y="23" width="743" height="813" key="CommitChangelistDialog2/0.23.1440.813@0.23.1440.813" timestamp="1598229019009" />
+    <state x="348" y="23" width="743" height="813" key="CommitChangelistDialog2/0.23.1440.813@0.23.1440.813" timestamp="1598493649819" />
     <state x="144" y="93" key="DiffContextDialog" timestamp="1597802660582">
       <screen x="0" y="23" width="1440" height="813" />
     </state>
     <state x="144" y="93" key="DiffContextDialog/0.23.1440.813@0.23.1440.813" timestamp="1597802660582" />
-    <state width="1398" height="220" key="GridCell.Tab.0.bottom" timestamp="1598493580482">
+    <state width="1398" height="220" key="GridCell.Tab.0.bottom" timestamp="1598515767779">
       <screen x="0" y="23" width="1440" height="813" />
     </state>
     <state width="1398" height="202" key="GridCell.Tab.0.bottom/0.23.1440.813/1440.23.1920.1057@0.23.1440.813" timestamp="1597290446107" />
     <state width="1398" height="151" key="GridCell.Tab.0.bottom/0.23.1440.813/1440.23.1920.1057@1440.23.1920.1057" timestamp="1597988081185" />
-    <state width="1398" height="220" key="GridCell.Tab.0.bottom/0.23.1440.813@0.23.1440.813" timestamp="1598493580482" />
-    <state width="1398" height="220" key="GridCell.Tab.0.center" timestamp="1598493580481">
+    <state width="1398" height="220" key="GridCell.Tab.0.bottom/0.23.1440.813@0.23.1440.813" timestamp="1598515767779" />
+    <state width="1398" height="220" key="GridCell.Tab.0.center" timestamp="1598515767778">
       <screen x="0" y="23" width="1440" height="813" />
     </state>
     <state width="1398" height="202" key="GridCell.Tab.0.center/0.23.1440.813/1440.23.1920.1057@0.23.1440.813" timestamp="1597290446106" />
     <state width="1398" height="151" key="GridCell.Tab.0.center/0.23.1440.813/1440.23.1920.1057@1440.23.1920.1057" timestamp="1597988081184" />
-    <state width="1398" height="220" key="GridCell.Tab.0.center/0.23.1440.813@0.23.1440.813" timestamp="1598493580481" />
-    <state width="1398" height="220" key="GridCell.Tab.0.left" timestamp="1598493580480">
+    <state width="1398" height="220" key="GridCell.Tab.0.center/0.23.1440.813@0.23.1440.813" timestamp="1598515767778" />
+    <state width="1398" height="220" key="GridCell.Tab.0.left" timestamp="1598515767761">
       <screen x="0" y="23" width="1440" height="813" />
     </state>
     <state width="1398" height="202" key="GridCell.Tab.0.left/0.23.1440.813/1440.23.1920.1057@0.23.1440.813" timestamp="1597290446106" />
     <state width="1398" height="151" key="GridCell.Tab.0.left/0.23.1440.813/1440.23.1920.1057@1440.23.1920.1057" timestamp="1597988081183" />
-    <state width="1398" height="220" key="GridCell.Tab.0.left/0.23.1440.813@0.23.1440.813" timestamp="1598493580480" />
-    <state width="1398" height="220" key="GridCell.Tab.0.right" timestamp="1598493580481">
+    <state width="1398" height="220" key="GridCell.Tab.0.left/0.23.1440.813@0.23.1440.813" timestamp="1598515767761" />
+    <state width="1398" height="220" key="GridCell.Tab.0.right" timestamp="1598515767778">
       <screen x="0" y="23" width="1440" height="813" />
     </state>
     <state width="1398" height="202" key="GridCell.Tab.0.right/0.23.1440.813/1440.23.1920.1057@0.23.1440.813" timestamp="1597290446107" />
     <state width="1398" height="151" key="GridCell.Tab.0.right/0.23.1440.813/1440.23.1920.1057@1440.23.1920.1057" timestamp="1597988081184" />
-    <state width="1398" height="220" key="GridCell.Tab.0.right/0.23.1440.813@0.23.1440.813" timestamp="1598493580481" />
+    <state width="1398" height="220" key="GridCell.Tab.0.right/0.23.1440.813@0.23.1440.813" timestamp="1598515767778" />
     <state width="1398" height="151" key="GridCell.Tab.1.bottom" timestamp="1597988081187">
       <screen x="1440" y="23" width="1920" height="1057" />
     </state>
@@ -422,19 +426,23 @@
       <screen x="0" y="23" width="1440" height="813" />
     </state>
     <state x="433" y="153" key="MultipleFileMergeDialog/0.23.1440.813@0.23.1440.813" timestamp="1598229033194" />
-    <state x="320" y="171" key="Vcs.Push.Dialog.v2" timestamp="1597978038927">
+    <state x="237" y="68" key="SettingsEditor" timestamp="1598573935424">
+      <screen x="0" y="23" width="1440" height="813" />
+    </state>
+    <state x="237" y="68" key="SettingsEditor/0.23.1440.813@0.23.1440.813" timestamp="1598573935424" />
+    <state x="320" y="171" key="Vcs.Push.Dialog.v2" timestamp="1598493690946">
       <screen x="0" y="23" width="1440" height="813" />
     </state>
     <state x="1867" y="215" key="Vcs.Push.Dialog.v2/0.23.1440.813/1440.23.1920.1057@1440.23.1920.1057" timestamp="1597893518645" />
-    <state x="320" y="171" key="Vcs.Push.Dialog.v2/0.23.1440.813@0.23.1440.813" timestamp="1597978038927" />
+    <state x="320" y="171" key="Vcs.Push.Dialog.v2/0.23.1440.813@0.23.1440.813" timestamp="1598493690946" />
     <state x="100" y="123" width="1240" height="613" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1597624851820">
       <screen x="0" y="23" width="1440" height="813" />
     </state>
     <state x="100" y="123" width="1240" height="613" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.23.1440.813@0.23.1440.813" timestamp="1597624851820" />
-    <state x="417" y="229" key="git4idea.merge.GitPullDialog" timestamp="1598229027307">
+    <state x="417" y="229" key="git4idea.merge.GitPullDialog" timestamp="1598493668764">
       <screen x="0" y="23" width="1440" height="813" />
     </state>
-    <state x="417" y="229" key="git4idea.merge.GitPullDialog/0.23.1440.813@0.23.1440.813" timestamp="1598229027307" />
+    <state x="417" y="229" key="git4idea.merge.GitPullDialog/0.23.1440.813@0.23.1440.813" timestamp="1598493668764" />
     <state x="385" y="160" width="670" height="676" key="search.everywhere.popup" timestamp="1597202281294">
       <screen x="0" y="23" width="1440" height="813" />
     </state>

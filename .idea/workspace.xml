@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4fe7156d-fb45-42ff-a8f4-5c0b74da99b5" name="Default" comment="1.实现快速排序之-三路快排&#10;2.TODO leetcode与快速排序有关">
-      <change afterPath="$PROJECT_DIR$/src/category/binarysearch/BinarySearchF.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/category/binarysearch/BinarySearchR.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/category/binarysearch/Leetcode704.java" afterDir="false" />
+    <list default="true" id="4fe7156d-fb45-42ff-a8f4-5c0b74da99b5" name="Default" comment="二分算法的两种实现方式">
+      <change afterPath="$PROJECT_DIR$/src/category/binarysearch/SearchMinMax.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
@@ -51,27 +49,13 @@
       <recent name="category.structure.stack" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.QuickSortThreeWays">
+  <component name="RunManager" selected="Application.SearchMinMax">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
       <option name="HEIGHT" value="300" />
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <module />
-    </configuration>
-    <configuration name="MergeBu" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="category.mergesort.MergeBu" />
-      <module name="algorithm" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="category.mergesort.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
     </configuration>
     <configuration name="QuickSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="category.quicksort.QuickSort" />
@@ -108,6 +92,20 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="category.quicksort.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SearchMinMax" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="category.binarysearch.SearchMinMax" />
+      <module name="algorithm" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="category.binarysearch.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -161,19 +159,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.MergeBu" />
       <item itemvalue="Application.QuickSort" />
       <item itemvalue="Application.QuickSort2" />
       <item itemvalue="Application.UpgradeQuickSort" />
       <item itemvalue="Application.QuickSortThreeWays" />
+      <item itemvalue="Application.SearchMinMax" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.SearchMinMax" />
         <item itemvalue="Application.QuickSortThreeWays" />
         <item itemvalue="Application.UpgradeQuickSort" />
         <item itemvalue="Application.QuickSort" />
         <item itemvalue="Application.QuickSort2" />
-        <item itemvalue="Application.MergeBu" />
       </list>
     </recent_temporary>
   </component>
@@ -207,7 +205,8 @@
       <workItem from="1597988673841" duration="598000" />
       <workItem from="1598228917684" duration="2206000" />
       <workItem from="1598315116288" duration="5575000" />
-      <workItem from="1598573757972" duration="3715000" />
+      <workItem from="1598573757972" duration="5528000" />
+      <workItem from="1598833449032" duration="1677000" />
     </task>
     <task id="LOCAL-00001" summary="1.项目结构调整&#10;2.实现插入排序">
       <created>1596337821048</created>
@@ -321,7 +320,14 @@
       <option name="project" value="LOCAL" />
       <updated>1598493650006</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="二分算法的两种实现方式">
+      <created>1598578802209</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1598578802209</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -357,7 +363,8 @@
     <MESSAGE value="1.实现第一版快速排序&#10;   在测试过程中出现问题，若数组初始有序，可能会发送内存溢出，待解决" />
     <MESSAGE value="Merge" />
     <MESSAGE value="1.实现快速排序之-三路快排&#10;2.TODO leetcode与快速排序有关" />
-    <option name="LAST_COMMIT_MESSAGE" value="1.实现快速排序之-三路快排&#10;2.TODO leetcode与快速排序有关" />
+    <MESSAGE value="二分算法的两种实现方式" />
+    <option name="LAST_COMMIT_MESSAGE" value="二分算法的两种实现方式" />
   </component>
   <component name="WindowStateProjectService">
     <state x="466" y="139" key="#com.intellij.ide.util.MemberChooser" timestamp="1598229095751">
@@ -365,11 +372,11 @@
     </state>
     <state x="2061" y="174" key="#com.intellij.ide.util.MemberChooser/0.23.1440.813/1440.23.1920.1057@1440.23.1920.1057" timestamp="1597979130676" />
     <state x="466" y="139" key="#com.intellij.ide.util.MemberChooser/0.23.1440.813@0.23.1440.813" timestamp="1598229095751" />
-    <state x="348" y="23" width="743" height="813" key="CommitChangelistDialog2" timestamp="1598493649819">
+    <state x="348" y="23" width="743" height="813" key="CommitChangelistDialog2" timestamp="1598578802007">
       <screen x="0" y="23" width="1440" height="813" />
     </state>
     <state x="1904" y="23" key="CommitChangelistDialog2/0.23.1440.813/1440.23.1920.1057@1440.23.1920.1057" timestamp="1597893511540" />
-    <state x="348" y="23" width="743" height="813" key="CommitChangelistDialog2/0.23.1440.813@0.23.1440.813" timestamp="1598493649819" />
+    <state x="348" y="23" width="743" height="813" key="CommitChangelistDialog2/0.23.1440.813@0.23.1440.813" timestamp="1598578802007" />
     <state x="144" y="93" key="DiffContextDialog" timestamp="1597802660582">
       <screen x="0" y="23" width="1440" height="813" />
     </state>
@@ -430,11 +437,11 @@
       <screen x="0" y="23" width="1440" height="813" />
     </state>
     <state x="237" y="68" key="SettingsEditor/0.23.1440.813@0.23.1440.813" timestamp="1598573935424" />
-    <state x="320" y="171" key="Vcs.Push.Dialog.v2" timestamp="1598493690946">
+    <state x="320" y="171" key="Vcs.Push.Dialog.v2" timestamp="1598578809982">
       <screen x="0" y="23" width="1440" height="813" />
     </state>
     <state x="1867" y="215" key="Vcs.Push.Dialog.v2/0.23.1440.813/1440.23.1920.1057@1440.23.1920.1057" timestamp="1597893518645" />
-    <state x="320" y="171" key="Vcs.Push.Dialog.v2/0.23.1440.813@0.23.1440.813" timestamp="1598493690946" />
+    <state x="320" y="171" key="Vcs.Push.Dialog.v2/0.23.1440.813@0.23.1440.813" timestamp="1598578809982" />
     <state x="100" y="123" width="1240" height="613" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1597624851820">
       <screen x="0" y="23" width="1440" height="813" />
     </state>

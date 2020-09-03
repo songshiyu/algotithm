@@ -34,6 +34,9 @@ public class BST<E extends Comparable<E>> {
         return size == 0;
     }
 
+    /**
+     * 递归的方式向二叉搜索树中添加元素
+     */
     public void add(E e) {
 
         if (root == null) {
@@ -62,6 +65,37 @@ public class BST<E extends Comparable<E>> {
             add(root.right, e);
         } else {
             add(root.left, e);
+        }
+    }
+
+    /**
+     * 非递归方式向二叉搜索树中插入元素
+     */
+    public void addNotR(E e) {
+        if (root == null) {
+            root = new Node(e);
+            size++;
+        } else {
+            Node cur = root;
+
+            while (cur != null) {
+                if (cur.e.equals(e)) {
+                    return;
+                } else if (e.compareTo(cur.e) > 0 && cur.right == null) {
+                    cur.right = new Node(e);
+                    size++;
+                    return;
+                } else if (e.compareTo(cur.e) < 0 && cur.left == null) {
+                    cur.left = new Node(e);
+                    size++;
+                    return;
+                }
+                if (e.compareTo(cur.e) > 0) {
+                    cur = cur.right;
+                } else {
+                    cur = cur.left;
+                }
+            }
         }
     }
 }

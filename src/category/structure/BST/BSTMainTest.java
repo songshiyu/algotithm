@@ -12,7 +12,7 @@ public class BSTMainTest {
         Integer[] arr = {3, 4, 5, 11, 65, 3, 7, 23, 65, 342, 9};
 
         for (Integer e : arr) {
-            bst.add(e);
+            bst.addNotR(e);
         }
 
         System.out.println(bst);

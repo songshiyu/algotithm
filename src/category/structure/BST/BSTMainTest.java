@@ -15,6 +15,12 @@ public class BSTMainTest {
             bst.addNotR(e);
         }
 
+        //boolean contains = bst.contains(50);
+        //System.out.println(contains);
+
+        //bst.preOrder();
+        //bst.midOrder();
+        //bst.lastOrder();
         System.out.println(bst);
     }
 }

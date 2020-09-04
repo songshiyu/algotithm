@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4fe7156d-fb45-42ff-a8f4-5c0b74da99b5" name="Default" comment="使用while循环的方式向二叉搜索树中添加元素">
+    <list default="true" id="4fe7156d-fb45-42ff-a8f4-5c0b74da99b5" name="Default" comment="二分搜索树的&#10;1.判断是否包含某元素&#10;2.前序遍历&#10;3.中序遍历&#10;4.后序遍历&#10;5.充血toString方法">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/category/structure/BST/BST.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/structure/BST/BST.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/category/structure/BST/BSTMainTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/structure/BST/BSTMainTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/category/structure/linked/LinkedListRecursion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/structure/linked/LinkedListRecursion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithm/category/structure/linked/LinkedListRecursion.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/algorithm/category/structure/linked/LinkedListRecursion.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category/leetcode/leetcode215/Leetcode215.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/leetcode/leetcode215/Leetcode215.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,7 +50,7 @@
       <recent name="category.structure.stack" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.BSTMainTest">
+  <component name="RunManager" selected="Application.Leetcode215">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
@@ -72,13 +72,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Leetcode1011" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="category.leetcode.leetcode1011.Leetcode1011" />
+    <configuration name="Leetcode215" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="category.leetcode.leetcode215.Leetcode215" />
       <module name="algorithm" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="category.leetcode.leetcode1011.*" />
+          <option name="PATTERN" value="category.leetcode.leetcode215.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -100,13 +100,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SearchMaxMin" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="category.binarysearch.SearchMaxMin" />
+    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="category.quicksort.Test" />
       <module name="algorithm" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="category.binarysearch.*" />
+          <option name="PATTERN" value="category.quicksort.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -160,19 +160,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.SearchMaxMin" />
-      <item itemvalue="Application.Leetcode1011" />
       <item itemvalue="Application.Lower_floor" />
       <item itemvalue="Application.Upper_floor" />
       <item itemvalue="Application.BSTMainTest" />
+      <item itemvalue="Application.Leetcode215" />
+      <item itemvalue="Application.Test" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Leetcode215" />
+        <item itemvalue="Application.Test" />
         <item itemvalue="Application.BSTMainTest" />
         <item itemvalue="Application.Upper_floor" />
         <item itemvalue="Application.Lower_floor" />
-        <item itemvalue="Application.Leetcode1011" />
-        <item itemvalue="Application.SearchMaxMin" />
       </list>
     </recent_temporary>
   </component>
@@ -213,7 +213,8 @@
       <workItem from="1599036795047" duration="655000" />
       <workItem from="1599037457409" duration="19000" />
       <workItem from="1599037510227" duration="11828000" />
-      <workItem from="1599178339857" duration="4217000" />
+      <workItem from="1599178339857" duration="5250000" />
+      <workItem from="1599190157524" duration="9526000" />
     </task>
     <task id="LOCAL-00001" summary="1.项目结构调整&#10;2.实现插入排序">
       <created>1596337821048</created>
@@ -376,7 +377,14 @@
       <option name="project" value="LOCAL" />
       <updated>1599100958570</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="二分搜索树的&#10;1.判断是否包含某元素&#10;2.前序遍历&#10;3.中序遍历&#10;4.后序遍历&#10;5.充血toString方法">
+      <created>1599186358784</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1599186358784</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -419,7 +427,8 @@
     <MESSAGE value="二分搜索的两种变种" />
     <MESSAGE value="构造一棵二叉搜索树，并向其中添加元素" />
     <MESSAGE value="使用while循环的方式向二叉搜索树中添加元素" />
-    <option name="LAST_COMMIT_MESSAGE" value="使用while循环的方式向二叉搜索树中添加元素" />
+    <MESSAGE value="二分搜索树的&#10;1.判断是否包含某元素&#10;2.前序遍历&#10;3.中序遍历&#10;4.后序遍历&#10;5.充血toString方法" />
+    <option name="LAST_COMMIT_MESSAGE" value="二分搜索树的&#10;1.判断是否包含某元素&#10;2.前序遍历&#10;3.中序遍历&#10;4.后序遍历&#10;5.充血toString方法" />
   </component>
   <component name="WindowStateProjectService">
     <state x="466" y="139" key="#com.intellij.ide.util.MemberChooser" timestamp="1599185818133">
@@ -427,63 +436,63 @@
     </state>
     <state x="2061" y="174" key="#com.intellij.ide.util.MemberChooser/0.23.1440.813/1440.23.1920.1057@1440.23.1920.1057" timestamp="1597979130676" />
     <state x="466" y="139" key="#com.intellij.ide.util.MemberChooser/0.23.1440.813@0.23.1440.813" timestamp="1599185818133" />
-    <state x="348" y="23" width="743" height="813" key="CommitChangelistDialog2" timestamp="1599100958415">
+    <state x="348" y="23" width="743" height="813" key="CommitChangelistDialog2" timestamp="1599186358518">
       <screen x="0" y="23" width="1440" height="813" />
     </state>
     <state x="1904" y="23" key="CommitChangelistDialog2/0.23.1440.813/1440.23.1920.1057@1440.23.1920.1057" timestamp="1597893511540" />
-    <state x="348" y="23" width="743" height="813" key="CommitChangelistDialog2/0.23.1440.813@0.23.1440.813" timestamp="1599100958415" />
+    <state x="348" y="23" width="743" height="813" key="CommitChangelistDialog2/0.23.1440.813@0.23.1440.813" timestamp="1599186358518" />
     <state x="144" y="93" key="DiffContextDialog" timestamp="1598838243959">
       <screen x="0" y="23" width="1440" height="813" />
     </state>
     <state x="144" y="93" key="DiffContextDialog/0.23.1440.813@0.23.1440.813" timestamp="1598838243959" />
-    <state width="1398" height="219" key="GridCell.Tab.0.bottom" timestamp="1599186252541">
+    <state width="1398" height="239" key="GridCell.Tab.0.bottom" timestamp="1599211435346">
       <screen x="0" y="23" width="1440" height="813" />
     </state>
     <state width="1398" height="239" key="GridCell.Tab.0.bottom/0.23.1440.813/1440.23.1920.1057@0.23.1440.813" timestamp="1598925495383" />
     <state width="1398" height="151" key="GridCell.Tab.0.bottom/0.23.1440.813/1440.23.1920.1057@1440.23.1920.1057" timestamp="1597988081185" />
-    <state width="1398" height="219" key="GridCell.Tab.0.bottom/0.23.1440.813@0.23.1440.813" timestamp="1599186252541" />
-    <state width="1398" height="219" key="GridCell.Tab.0.center" timestamp="1599186252541">
+    <state width="1398" height="239" key="GridCell.Tab.0.bottom/0.23.1440.813@0.23.1440.813" timestamp="1599211435346" />
+    <state width="1398" height="239" key="GridCell.Tab.0.center" timestamp="1599211435345">
       <screen x="0" y="23" width="1440" height="813" />
     </state>
     <state width="1398" height="239" key="GridCell.Tab.0.center/0.23.1440.813/1440.23.1920.1057@0.23.1440.813" timestamp="1598925495382" />
     <state width="1398" height="151" key="GridCell.Tab.0.center/0.23.1440.813/1440.23.1920.1057@1440.23.1920.1057" timestamp="1597988081184" />
-    <state width="1398" height="219" key="GridCell.Tab.0.center/0.23.1440.813@0.23.1440.813" timestamp="1599186252541" />
-    <state width="1398" height="219" key="GridCell.Tab.0.left" timestamp="1599186252540">
+    <state width="1398" height="239" key="GridCell.Tab.0.center/0.23.1440.813@0.23.1440.813" timestamp="1599211435345" />
+    <state width="1398" height="239" key="GridCell.Tab.0.left" timestamp="1599211435344">
       <screen x="0" y="23" width="1440" height="813" />
     </state>
     <state width="1398" height="239" key="GridCell.Tab.0.left/0.23.1440.813/1440.23.1920.1057@0.23.1440.813" timestamp="1598925495381" />
     <state width="1398" height="151" key="GridCell.Tab.0.left/0.23.1440.813/1440.23.1920.1057@1440.23.1920.1057" timestamp="1597988081183" />
-    <state width="1398" height="219" key="GridCell.Tab.0.left/0.23.1440.813@0.23.1440.813" timestamp="1599186252540" />
-    <state width="1398" height="219" key="GridCell.Tab.0.right" timestamp="1599186252541">
+    <state width="1398" height="239" key="GridCell.Tab.0.left/0.23.1440.813@0.23.1440.813" timestamp="1599211435344" />
+    <state width="1398" height="239" key="GridCell.Tab.0.right" timestamp="1599211435345">
       <screen x="0" y="23" width="1440" height="813" />
     </state>
     <state width="1398" height="239" key="GridCell.Tab.0.right/0.23.1440.813/1440.23.1920.1057@0.23.1440.813" timestamp="1598925495382" />
     <state width="1398" height="151" key="GridCell.Tab.0.right/0.23.1440.813/1440.23.1920.1057@1440.23.1920.1057" timestamp="1597988081184" />
-    <state width="1398" height="219" key="GridCell.Tab.0.right/0.23.1440.813@0.23.1440.813" timestamp="1599186252541" />
-    <state width="1398" height="242" key="GridCell.Tab.1.bottom" timestamp="1599111387346">
+    <state width="1398" height="239" key="GridCell.Tab.0.right/0.23.1440.813@0.23.1440.813" timestamp="1599211435345" />
+    <state width="1398" height="173" key="GridCell.Tab.1.bottom" timestamp="1599211354634">
       <screen x="0" y="23" width="1440" height="813" />
     </state>
     <state width="1398" height="239" key="GridCell.Tab.1.bottom/0.23.1440.813/1440.23.1920.1057@0.23.1440.813" timestamp="1598925495384" />
     <state width="1398" height="151" key="GridCell.Tab.1.bottom/0.23.1440.813/1440.23.1920.1057@1440.23.1920.1057" timestamp="1597988081187" />
-    <state width="1398" height="242" key="GridCell.Tab.1.bottom/0.23.1440.813@0.23.1440.813" timestamp="1599111387346" />
-    <state width="1398" height="242" key="GridCell.Tab.1.center" timestamp="1599111387345">
+    <state width="1398" height="173" key="GridCell.Tab.1.bottom/0.23.1440.813@0.23.1440.813" timestamp="1599211354634" />
+    <state width="1398" height="173" key="GridCell.Tab.1.center" timestamp="1599211354633">
       <screen x="0" y="23" width="1440" height="813" />
     </state>
     <state width="1398" height="239" key="GridCell.Tab.1.center/0.23.1440.813/1440.23.1920.1057@0.23.1440.813" timestamp="1598925495383" />
     <state width="1398" height="151" key="GridCell.Tab.1.center/0.23.1440.813/1440.23.1920.1057@1440.23.1920.1057" timestamp="1597988081186" />
-    <state width="1398" height="242" key="GridCell.Tab.1.center/0.23.1440.813@0.23.1440.813" timestamp="1599111387345" />
-    <state width="1398" height="242" key="GridCell.Tab.1.left" timestamp="1599111387345">
+    <state width="1398" height="173" key="GridCell.Tab.1.center/0.23.1440.813@0.23.1440.813" timestamp="1599211354633" />
+    <state width="1398" height="173" key="GridCell.Tab.1.left" timestamp="1599211354632">
       <screen x="0" y="23" width="1440" height="813" />
     </state>
     <state width="1398" height="239" key="GridCell.Tab.1.left/0.23.1440.813/1440.23.1920.1057@0.23.1440.813" timestamp="1598925495383" />
     <state width="1398" height="151" key="GridCell.Tab.1.left/0.23.1440.813/1440.23.1920.1057@1440.23.1920.1057" timestamp="1597988081186" />
-    <state width="1398" height="242" key="GridCell.Tab.1.left/0.23.1440.813@0.23.1440.813" timestamp="1599111387345" />
-    <state width="1398" height="242" key="GridCell.Tab.1.right" timestamp="1599111387346">
+    <state width="1398" height="173" key="GridCell.Tab.1.left/0.23.1440.813@0.23.1440.813" timestamp="1599211354632" />
+    <state width="1398" height="173" key="GridCell.Tab.1.right" timestamp="1599211354633">
       <screen x="0" y="23" width="1440" height="813" />
     </state>
     <state width="1398" height="239" key="GridCell.Tab.1.right/0.23.1440.813/1440.23.1920.1057@0.23.1440.813" timestamp="1598925495384" />
     <state width="1398" height="151" key="GridCell.Tab.1.right/0.23.1440.813/1440.23.1920.1057@1440.23.1920.1057" timestamp="1597988081186" />
-    <state width="1398" height="242" key="GridCell.Tab.1.right/0.23.1440.813@0.23.1440.813" timestamp="1599111387346" />
+    <state width="1398" height="173" key="GridCell.Tab.1.right/0.23.1440.813@0.23.1440.813" timestamp="1599211354633" />
     <state x="433" y="153" key="MultipleFileMergeDialog" timestamp="1598229033194">
       <screen x="0" y="23" width="1440" height="813" />
     </state>
@@ -492,11 +501,11 @@
       <screen x="0" y="23" width="1440" height="813" />
     </state>
     <state x="237" y="68" key="SettingsEditor/0.23.1440.813@0.23.1440.813" timestamp="1598573935424" />
-    <state x="320" y="171" key="Vcs.Push.Dialog.v2" timestamp="1599100964958">
+    <state x="320" y="171" key="Vcs.Push.Dialog.v2" timestamp="1599186365616">
       <screen x="0" y="23" width="1440" height="813" />
     </state>
     <state x="1867" y="215" key="Vcs.Push.Dialog.v2/0.23.1440.813/1440.23.1920.1057@1440.23.1920.1057" timestamp="1597893518645" />
-    <state x="320" y="171" key="Vcs.Push.Dialog.v2/0.23.1440.813@0.23.1440.813" timestamp="1599100964958" />
+    <state x="320" y="171" key="Vcs.Push.Dialog.v2/0.23.1440.813@0.23.1440.813" timestamp="1599186365616" />
     <state x="100" y="123" width="1240" height="613" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1597624851820">
       <screen x="0" y="23" width="1440" height="813" />
     </state>
@@ -518,6 +527,11 @@
           <url>file://$PROJECT_DIR$/src/category/binarysearch/SearchMaxMin.java</url>
           <line>13</line>
           <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/category/leetcode/leetcode215/Leetcode215.java</url>
+          <line>78</line>
+          <option name="timeStamp" value="7" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

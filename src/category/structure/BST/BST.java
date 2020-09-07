@@ -1,5 +1,7 @@
 package category.structure.BST;
 
+import java.util.Stack;
+
 /**
  * @description: 二分搜索树
  * @create: 2020/9/3 08:48:47
@@ -124,6 +126,32 @@ public class BST<E extends Comparable<E>> {
         System.out.println(node.e);
         preOrder(node.left);
         preOrder(node.right);
+    }
+
+    /**
+     * 通过模拟系统栈的方式实现二叉树的前序遍历
+     */
+    public void preOrderNR() {
+
+        if (root == null) {
+            return;
+        }
+        Stack<Node> stack = new Stack<>();
+        stack.push(root);
+
+        while (!stack.isEmpty()) {
+            Node node = stack.pop();
+            System.out.println(node.e);
+
+            if (node.right != null) {
+                stack.push(node.right);
+            }
+
+            if (node.left != null) {
+                stack.push(node.left);
+            }
+        }
+
     }
 
     /**

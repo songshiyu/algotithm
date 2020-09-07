@@ -1,5 +1,7 @@
 package category.structure.BST;
 
+import java.util.LinkedList;
+import java.util.Queue;
 import java.util.Stack;
 
 /**
@@ -189,6 +191,205 @@ public class BST<E extends Comparable<E>> {
         lastOrder(node.left);
         lastOrder(node.right);
         System.out.println(node.e);
+    }
+
+
+    /**
+     * 二分搜索树的层序遍历（广度优先遍历）
+     */
+    public void levelOrder() {
+
+        if (root == null) {
+            return;
+        }
+
+        Queue<Node> queue = new LinkedList();
+        queue.add(root);
+
+        while (!queue.isEmpty()) {
+            Node cur = queue.remove();
+            System.out.println(cur.e);
+
+            if (cur.left != null) {
+                queue.add(cur.left);
+            }
+
+            if (cur.right != null) {
+                queue.add(cur.right);
+            }
+        }
+    }
+
+
+    /**
+     * 查找二分搜索树中的最小值（递归方式）
+     */
+    public E minimum() {
+        if (size == 0) {
+            throw new IllegalArgumentException("BST is empty");
+        }
+
+        Node minimum = minimum(root);
+        return minimum.e;
+    }
+
+    private Node minimum(Node node) {
+
+        if (node.left == null) {
+            return node;
+        }
+
+        return minimum(node.left);
+    }
+
+    /**
+     * 查找二分搜索树中的最小值（非递归方式）
+     */
+    public E minimumNR() {
+
+        if (size == 0) {
+            throw new IllegalArgumentException("BST is empty");
+        }
+
+        Node cur = root;
+
+        while (cur.left != null) {
+            cur = cur.left;
+        }
+        return cur.e;
+    }
+
+
+    /**
+     * 查找二分搜索树中的最大值（递归方式）
+     */
+    public E maxMem() {
+
+        if (size == 0) {
+            throw new IllegalArgumentException("BST is empty");
+        }
+
+        Node maxMem = maxMem(root);
+        return maxMem.e;
+    }
+
+    private Node maxMem(Node node) {
+
+        if (node.right == null) {
+            return node;
+        }
+
+        return maxMem(node.right);
+    }
+
+    /**
+     * 查找二分搜索树中的最大值（非递归方式）
+     */
+    public E maxMemNR() {
+
+        if (size == 0) {
+            throw new IllegalArgumentException("BST is empty");
+        }
+
+        Node cur = root;
+
+        while (cur.right != null) {
+            cur = cur.right;
+        }
+        return cur.e;
+    }
+
+    /**
+     * 移除二分搜索树中最小元素(递归方式)
+     */
+    public E removeMin() {
+        E min = minimum();
+        root = removeMin(root);
+        return min;
+    }
+
+    private Node removeMin(Node node) {
+
+        if (node.left == null) {
+            Node rightNode = node.right;
+            node.right = null;
+            size--;
+            return rightNode;
+        }
+
+        node.left = removeMin(node.left);
+        return node;
+    }
+
+    /**
+     * 移除二分搜索树中的最小元素(非递归方式)
+     */
+    public E removeMinNR() {
+
+        if (size == 0) {
+            throw new IllegalArgumentException("BST is empty");
+        }
+
+        Node cur = root;
+        Node preCur = null;
+        Node rightNode = null;
+
+        while (cur.left != null) {
+            preCur = cur;
+            cur = cur.left;
+            rightNode = cur.right;
+        }
+
+        preCur.left = rightNode;
+        cur.right = null;
+
+        return cur.e;
+    }
+
+    /**
+     * 移除二分搜索树中的最大元素(递归实现方式)
+     */
+    public E removeMax() {
+        E maxMem = maxMem();
+        root = removeMax(root);
+        return maxMem;
+    }
+
+    private Node removeMax(Node node) {
+
+        if (node.right == null) {
+            Node leftNode = node.left;
+            node.left = null;
+            size--;
+            return leftNode;
+        }
+
+        node.right = removeMax(node.right);
+        return node;
+    }
+
+    /**
+     * 移除二分搜索树中的最大元素(非递归实现方式)
+     */
+    public E removeMaxNR() {
+
+        if (size == 0) {
+            throw new IllegalArgumentException("BST is empty");
+        }
+
+        Node preCur = null;
+        Node cur = root;
+        Node leftNode = null;
+
+        while (cur.right != null) {
+            preCur = cur;
+            cur = cur.right;
+            leftNode = cur.left;
+        }
+
+        preCur.right = leftNode;
+        cur.left = null;
+        return cur.e;
     }
 
     /**

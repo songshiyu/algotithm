@@ -9,7 +9,7 @@ public class BSTMainTest {
 
     public static void main(String[] args) {
         BST bst = new BST();
-        Integer[] arr = {3, 4, 5, 11, 65, 3, 7, 23, 65, 342, 9};
+        Integer[] arr = {5, 3, 4, 5, 11, 65, 3, 2, 7, 23, 65, 342, 9};
 
         for (Integer e : arr) {
             bst.addNotR(e);
@@ -18,11 +18,18 @@ public class BSTMainTest {
         //boolean contains = bst.contains(50);
         //System.out.println(contains);
 
-        bst.preOrder();
-        System.out.println();
-        bst.preOrderNR();
+        //bst.preOrder();
+        //System.out.println();
+        //bst.preOrderNR();
         //bst.midOrder();
         //bst.lastOrder();
         //System.out.println(bst);
+
+        //bst.levelOrder();
+        //Integer min = (Integer) bst.maxMemNR();
+        //System.out.println(min);
+
+        Integer removeEle = (Integer) bst.removeMaxNR();
+        System.out.println(removeEle);
     }
 }

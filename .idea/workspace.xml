@@ -1,11 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4fe7156d-fb45-42ff-a8f4-5c0b74da99b5" name="Default" comment="二分搜索树的&#10;1.判断是否包含某元素&#10;2.前序遍历&#10;3.中序遍历&#10;4.后序遍历&#10;5.充血toString方法">
+    <list default="true" id="4fe7156d-fb45-42ff-a8f4-5c0b74da99b5" name="Default" comment="1.使用快速排序解决leetcode215&#10;2.记录使自己保持专注的方式">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/algorithm/category/structure/linked/LinkedListRecursion.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/algorithm/category/structure/linked/LinkedListRecursion.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/category/leetcode/leetcode215/Leetcode215.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/category/leetcode/leetcode215/Leetcode215.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -214,7 +211,7 @@
       <workItem from="1599037457409" duration="19000" />
       <workItem from="1599037510227" duration="11828000" />
       <workItem from="1599178339857" duration="5250000" />
-      <workItem from="1599190157524" duration="9526000" />
+      <workItem from="1599190157524" duration="10581000" />
     </task>
     <task id="LOCAL-00001" summary="1.项目结构调整&#10;2.实现插入排序">
       <created>1596337821048</created>
@@ -384,7 +381,14 @@
       <option name="project" value="LOCAL" />
       <updated>1599186358784</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="1.使用快速排序解决leetcode215&#10;2.记录使自己保持专注的方式">
+      <created>1599211673587</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1599211673587</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -428,7 +432,8 @@
     <MESSAGE value="构造一棵二叉搜索树，并向其中添加元素" />
     <MESSAGE value="使用while循环的方式向二叉搜索树中添加元素" />
     <MESSAGE value="二分搜索树的&#10;1.判断是否包含某元素&#10;2.前序遍历&#10;3.中序遍历&#10;4.后序遍历&#10;5.充血toString方法" />
-    <option name="LAST_COMMIT_MESSAGE" value="二分搜索树的&#10;1.判断是否包含某元素&#10;2.前序遍历&#10;3.中序遍历&#10;4.后序遍历&#10;5.充血toString方法" />
+    <MESSAGE value="1.使用快速排序解决leetcode215&#10;2.记录使自己保持专注的方式" />
+    <option name="LAST_COMMIT_MESSAGE" value="1.使用快速排序解决leetcode215&#10;2.记录使自己保持专注的方式" />
   </component>
   <component name="WindowStateProjectService">
     <state x="466" y="139" key="#com.intellij.ide.util.MemberChooser" timestamp="1599185818133">
@@ -436,39 +441,39 @@
     </state>
     <state x="2061" y="174" key="#com.intellij.ide.util.MemberChooser/0.23.1440.813/1440.23.1920.1057@1440.23.1920.1057" timestamp="1597979130676" />
     <state x="466" y="139" key="#com.intellij.ide.util.MemberChooser/0.23.1440.813@0.23.1440.813" timestamp="1599185818133" />
-    <state x="348" y="23" width="743" height="813" key="CommitChangelistDialog2" timestamp="1599186358518">
+    <state x="348" y="23" width="743" height="813" key="CommitChangelistDialog2" timestamp="1599211673337">
       <screen x="0" y="23" width="1440" height="813" />
     </state>
     <state x="1904" y="23" key="CommitChangelistDialog2/0.23.1440.813/1440.23.1920.1057@1440.23.1920.1057" timestamp="1597893511540" />
-    <state x="348" y="23" width="743" height="813" key="CommitChangelistDialog2/0.23.1440.813@0.23.1440.813" timestamp="1599186358518" />
-    <state x="144" y="93" key="DiffContextDialog" timestamp="1598838243959">
+    <state x="348" y="23" width="743" height="813" key="CommitChangelistDialog2/0.23.1440.813@0.23.1440.813" timestamp="1599211673337" />
+    <state x="144" y="93" key="DiffContextDialog" timestamp="1599211667658">
       <screen x="0" y="23" width="1440" height="813" />
     </state>
-    <state x="144" y="93" key="DiffContextDialog/0.23.1440.813@0.23.1440.813" timestamp="1598838243959" />
-    <state width="1398" height="239" key="GridCell.Tab.0.bottom" timestamp="1599211435346">
+    <state x="144" y="93" key="DiffContextDialog/0.23.1440.813@0.23.1440.813" timestamp="1599211667658" />
+    <state width="1398" height="204" key="GridCell.Tab.0.bottom" timestamp="1599211698283">
       <screen x="0" y="23" width="1440" height="813" />
     </state>
     <state width="1398" height="239" key="GridCell.Tab.0.bottom/0.23.1440.813/1440.23.1920.1057@0.23.1440.813" timestamp="1598925495383" />
     <state width="1398" height="151" key="GridCell.Tab.0.bottom/0.23.1440.813/1440.23.1920.1057@1440.23.1920.1057" timestamp="1597988081185" />
-    <state width="1398" height="239" key="GridCell.Tab.0.bottom/0.23.1440.813@0.23.1440.813" timestamp="1599211435346" />
-    <state width="1398" height="239" key="GridCell.Tab.0.center" timestamp="1599211435345">
+    <state width="1398" height="204" key="GridCell.Tab.0.bottom/0.23.1440.813@0.23.1440.813" timestamp="1599211698283" />
+    <state width="1398" height="204" key="GridCell.Tab.0.center" timestamp="1599211698282">
       <screen x="0" y="23" width="1440" height="813" />
     </state>
     <state width="1398" height="239" key="GridCell.Tab.0.center/0.23.1440.813/1440.23.1920.1057@0.23.1440.813" timestamp="1598925495382" />
     <state width="1398" height="151" key="GridCell.Tab.0.center/0.23.1440.813/1440.23.1920.1057@1440.23.1920.1057" timestamp="1597988081184" />
-    <state width="1398" height="239" key="GridCell.Tab.0.center/0.23.1440.813@0.23.1440.813" timestamp="1599211435345" />
-    <state width="1398" height="239" key="GridCell.Tab.0.left" timestamp="1599211435344">
+    <state width="1398" height="204" key="GridCell.Tab.0.center/0.23.1440.813@0.23.1440.813" timestamp="1599211698282" />
+    <state width="1398" height="204" key="GridCell.Tab.0.left" timestamp="1599211698282">
       <screen x="0" y="23" width="1440" height="813" />
     </state>
     <state width="1398" height="239" key="GridCell.Tab.0.left/0.23.1440.813/1440.23.1920.1057@0.23.1440.813" timestamp="1598925495381" />
     <state width="1398" height="151" key="GridCell.Tab.0.left/0.23.1440.813/1440.23.1920.1057@1440.23.1920.1057" timestamp="1597988081183" />
-    <state width="1398" height="239" key="GridCell.Tab.0.left/0.23.1440.813@0.23.1440.813" timestamp="1599211435344" />
-    <state width="1398" height="239" key="GridCell.Tab.0.right" timestamp="1599211435345">
+    <state width="1398" height="204" key="GridCell.Tab.0.left/0.23.1440.813@0.23.1440.813" timestamp="1599211698282" />
+    <state width="1398" height="204" key="GridCell.Tab.0.right" timestamp="1599211698282">
       <screen x="0" y="23" width="1440" height="813" />
     </state>
     <state width="1398" height="239" key="GridCell.Tab.0.right/0.23.1440.813/1440.23.1920.1057@0.23.1440.813" timestamp="1598925495382" />
     <state width="1398" height="151" key="GridCell.Tab.0.right/0.23.1440.813/1440.23.1920.1057@1440.23.1920.1057" timestamp="1597988081184" />
-    <state width="1398" height="239" key="GridCell.Tab.0.right/0.23.1440.813@0.23.1440.813" timestamp="1599211435345" />
+    <state width="1398" height="204" key="GridCell.Tab.0.right/0.23.1440.813@0.23.1440.813" timestamp="1599211698282" />
     <state width="1398" height="173" key="GridCell.Tab.1.bottom" timestamp="1599211354634">
       <screen x="0" y="23" width="1440" height="813" />
     </state>
@@ -501,19 +506,19 @@
       <screen x="0" y="23" width="1440" height="813" />
     </state>
     <state x="237" y="68" key="SettingsEditor/0.23.1440.813@0.23.1440.813" timestamp="1598573935424" />
-    <state x="320" y="171" key="Vcs.Push.Dialog.v2" timestamp="1599186365616">
+    <state x="320" y="171" key="Vcs.Push.Dialog.v2" timestamp="1599211683569">
       <screen x="0" y="23" width="1440" height="813" />
     </state>
     <state x="1867" y="215" key="Vcs.Push.Dialog.v2/0.23.1440.813/1440.23.1920.1057@1440.23.1920.1057" timestamp="1597893518645" />
-    <state x="320" y="171" key="Vcs.Push.Dialog.v2/0.23.1440.813@0.23.1440.813" timestamp="1599186365616" />
+    <state x="320" y="171" key="Vcs.Push.Dialog.v2/0.23.1440.813@0.23.1440.813" timestamp="1599211683569" />
     <state x="100" y="123" width="1240" height="613" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1597624851820">
       <screen x="0" y="23" width="1440" height="813" />
     </state>
     <state x="100" y="123" width="1240" height="613" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.23.1440.813@0.23.1440.813" timestamp="1597624851820" />
-    <state x="417" y="229" key="git4idea.merge.GitPullDialog" timestamp="1598838255820">
+    <state x="417" y="229" key="git4idea.merge.GitPullDialog" timestamp="1599437387430">
       <screen x="0" y="23" width="1440" height="813" />
     </state>
-    <state x="417" y="229" key="git4idea.merge.GitPullDialog/0.23.1440.813@0.23.1440.813" timestamp="1598838255820" />
+    <state x="417" y="229" key="git4idea.merge.GitPullDialog/0.23.1440.813@0.23.1440.813" timestamp="1599437387430" />
     <state x="385" y="160" width="670" height="676" key="search.everywhere.popup" timestamp="1599038430630">
       <screen x="0" y="23" width="1440" height="813" />
     </state>
@@ -527,11 +532,6 @@
           <url>file://$PROJECT_DIR$/src/category/binarysearch/SearchMaxMin.java</url>
           <line>13</line>
           <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/category/leetcode/leetcode215/Leetcode215.java</url>
-          <line>78</line>
-          <option name="timeStamp" value="7" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

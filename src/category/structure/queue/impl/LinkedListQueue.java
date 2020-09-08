@@ -1,6 +1,5 @@
 package category.structure.queue.impl;
 
-import category.structure.linked.MyLinkedListUp;
 import category.structure.queue.Myqueue;
 
 /**

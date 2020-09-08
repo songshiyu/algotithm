@@ -2,13 +2,12 @@ package category.structure.linked;
 
 /**
  * @description:
- * @create: 2020/8/10 09:33:13
+ * @create: 2020/9/8 11:30:47
  **/
 public class MyLinkedListUp<E> {
-
     private class Node {
-        private E e;
-        private Node next;
+        public E e;
+        public Node next;
 
         public Node(E e, Node next) {
             this.e = e;
@@ -135,7 +134,7 @@ public class MyLinkedListUp<E> {
 
         Node cur = dummyHead.next;
 
-        while (cur.next != null) {
+        while (cur != null) {
             if (cur.e.equals(e)) {
                 return true;
             }
@@ -166,13 +165,13 @@ public class MyLinkedListUp<E> {
 
     /**
      * 删除链表中的第一个元素
-     * */
-    public E removeFirst(){
+     */
+    public E removeFirst() {
         return remove(0);
     }
 
-    public E removeLast(){
-        return remove(size -1);
+    public E removeLast() {
+        return remove(size - 1);
     }
 
     @Override
@@ -186,5 +185,25 @@ public class MyLinkedListUp<E> {
         }
         res.append("NULL");
         return res.toString();
+    }
+
+    /**
+     * 从链表中删除元素e
+     */
+    public void removeElement(E e) {
+
+        Node prev = dummyHead;
+        while (prev.next != null) {
+            if (prev.next.e.equals(e))
+                break;
+            prev = prev.next;
+        }
+
+        if (prev.next != null) {
+            Node delNode = prev.next;
+            prev.next = delNode.next;
+            delNode.next = null;
+            size--;
+        }
     }
 }

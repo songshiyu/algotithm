@@ -8,7 +8,7 @@ package category.structure.linked;
 public class MainTest {
 
     public static void main(String[] args) {
-        MyLinkedListUp linkedList = new MyLinkedListUp();
+        LinkedList linkedList = new LinkedList();
 
         for (int i = 0; i < 5; i++) {
             linkedList.addFirst(i);

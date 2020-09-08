@@ -1,6 +1,6 @@
 package category.structure.stack.impl;
 
-import category.structure.linked.MyLinkedListUp;
+import category.structure.linked.LinkedList;
 import category.structure.stack.MyStack;
 
 /**
@@ -9,10 +9,10 @@ import category.structure.stack.MyStack;
  **/
 public class LinkedListStack<E> implements MyStack<E> {
 
-    private MyLinkedListUp<E> linkedList;
+    private LinkedList<E> linkedList;
 
     public LinkedListStack() {
-        this.linkedList = new MyLinkedListUp<>();
+        this.linkedList = new LinkedList<>();
     }
 
     @Override

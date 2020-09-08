@@ -393,6 +393,55 @@ public class BST<E extends Comparable<E>> {
     }
 
     /**
+     * 移除二分搜索树中值为E的元素
+     */
+    public void removeEle(E e) {
+        root = removeEle(root, e);
+    }
+
+    private Node removeEle(Node node, E e) {
+
+        if (node == null) {
+            throw new IllegalArgumentException("BST is empty");
+        }
+
+        if (e.compareTo(node.e) > 0) {
+            node.right = removeEle(node.right, e);
+            return node;
+        } else if (e.compareTo(node.e) < 0) {
+            node.left = removeEle(node.left, e);
+            return node;
+        } else { //e.compareTo(node.e) == 0
+
+            //若待删除节点的左孩子为空
+            if (node.left == null) {
+                Node rightNode = node.right;
+                node.right = null;
+                size--;
+                return rightNode;
+            }
+
+            //若待删除节点的右孩子为空
+            if (node.right == null) {
+                Node leftNode = node.left;
+                node.left = null;
+                size--;
+                return leftNode;
+            }
+
+            //若待删除节点的左孩子和右孩子都不为空
+            //找到比待删除节点大的最小界定，即待删除节点右子树的最小节点
+            //用这个节点顶替待删除节点的位置
+            Node targetNode = minimum(node.right);
+            targetNode.right = removeMin(node.right);
+            targetNode.left = node.left;
+
+            node.left = node.right = null;
+            return targetNode;
+        }
+    }
+
+    /**
      * 基于二分搜索树前序遍历的toString方法
      */
     @Override

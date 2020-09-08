@@ -2,7 +2,6 @@ package category.structure.BST;
 
 /**
  * @description:
- * @E-mail: ssy3@meitu.com
  * @create: 2020/9/3 10:13:46
  **/
 public class BSTMainTest {
@@ -29,7 +28,10 @@ public class BSTMainTest {
         //Integer min = (Integer) bst.maxMemNR();
         //System.out.println(min);
 
-        Integer removeEle = (Integer) bst.removeMaxNR();
-        System.out.println(removeEle);
+        //Integer removeEle = (Integer) bst.removeMaxNR();
+        //System.out.println(removeEle);
+
+        bst.removeEle(23);
+        System.out.println(bst);
     }
 }

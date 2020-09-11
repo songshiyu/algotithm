@@ -132,7 +132,7 @@ public class MyArray<E> {
         data[size - 1] = null;     //删除无用的引用
         size--;
 
-        if (size == data.length / 4 && data.length / 2 != 0){
+        if (size == data.length / 4 && data.length / 2 != 0) {
             resize(data.length / 2);
         }
         return ret;
@@ -164,7 +164,7 @@ public class MyArray<E> {
 
     /**
      * 当数组容量不够时，自动扩容为之前容量的2倍
-     * */
+     */
     public void resize(int newCapacity) {
         E[] newData = (E[]) new Object[newCapacity];
         for (int i = 0; i < size; i++) {
@@ -173,20 +173,26 @@ public class MyArray<E> {
         data = newData;
     }
 
-    public E getFirst(){
+    public E getFirst() {
         return get(0);
     }
 
-    public E getLast(){
-        return get(size -1);
+    public E getLast() {
+        return get(size - 1);
+    }
+
+    public void swap(int i, int j) {
+        E tmp = data[i];
+        data[i] = data[j];
+        data[j] = tmp;
     }
 
     public static void main(String[] args) {
 
         MyArray<Student> array = new MyArray<>();
-        array.addLast(new Student("songshiyu",20));
-        array.addLast(new Student("liuweiming",18));
-        array.addLast(new Student("songshiyu1",21));
+        array.addLast(new Student("songshiyu", 20));
+        array.addLast(new Student("liuweiming", 18));
+        array.addLast(new Student("songshiyu1", 21));
         System.out.println(array);
 
         array.remove(2);

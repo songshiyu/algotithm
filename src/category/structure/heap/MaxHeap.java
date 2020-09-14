@@ -21,6 +21,20 @@ public class MaxHeap<E extends Comparable<E>> {
         data = new MyArray<>();
     }
 
+    /**
+     * Heapify 把一个数组以二叉堆的形式存放,直接写成构造函数的形式
+     */
+    public MaxHeap(E[] arr) {
+        data = new MyArray<>(arr);
+
+        if (arr.length != 1) {
+            for (int i = parent(arr.length - 1); i >= 0; i--) {
+                siftDown(i);
+            }
+        }
+    }
+
+
     // 返回堆中的元素个数
     public int size() {
         return data.getSize();
@@ -125,6 +139,17 @@ public class MaxHeap<E extends Comparable<E>> {
         }
 
         return data.get(0);
+    }
+
+    /**
+     * replace 取出堆中的最大元素，并替换为另一个元素
+     */
+    public E replcae(E e) {
+        E ret = findMax();
+
+        data.set(0, e);
+        siftDown(0);
+        return ret;
     }
 
     public static void main(String[] args) {

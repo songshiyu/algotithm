@@ -24,6 +24,18 @@ public class MyArray<E> {
         this(10);
     }
 
+    /**
+     * 传入一个数组的构造函数
+     */
+    public MyArray(E[] arr) {
+        data = (E[]) new Object[arr.length];
+
+        for (int i = 0; i < arr.length; i++) {
+            data[i] = arr[i];
+        }
+        size = arr.length;
+    }
+
     //获取元素个数
     public int getSize() {
         return size;

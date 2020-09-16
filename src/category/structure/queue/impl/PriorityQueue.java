@@ -11,7 +11,7 @@ public class PriorityQueue<E extends Comparable<E>> implements Myqueue<E> {
 
     private MaxHeap<E> maxHeap;
 
-    public PriorityQueue(E e) {
+    public PriorityQueue() {
         maxHeap = new MaxHeap<>();
     }
 

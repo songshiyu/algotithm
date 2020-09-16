@@ -3,7 +3,7 @@ package category.leetcode.swort.leetcode40;
 import java.util.Comparator;
 
 /**
- * @description: 最小的k个数 使用优先队列来解决
+ * @description: 最小的k个数 使用优先队列来解决，此题还可以使用快速排序的方式实现，此处未实现
  * @create: 2020/8/27 09:17:57
  **/
 public class Leetcode40 {

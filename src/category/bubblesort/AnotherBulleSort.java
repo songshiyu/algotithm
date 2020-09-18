@@ -1,4 +1,4 @@
-package category.bubblseort;
+package category.bubblesort;
 
 import util.AlgorithmHelper;
 import util.ArrayGenerator;

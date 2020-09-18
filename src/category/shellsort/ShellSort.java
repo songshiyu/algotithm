@@ -1,6 +1,5 @@
 package category.shellsort;
 
-import category.bubblseort.BubbleSort;
 import review.sort.insertsort.InsertSort;
 import util.AlgorithmHelper;
 import util.ArrayGenerator;

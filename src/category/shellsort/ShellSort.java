@@ -1,5 +1,6 @@
 package category.shellsort;
 
+import category.mergesort.MergeBu;
 import review.sort.insertsort.InsertSort;
 import util.AlgorithmHelper;
 import util.ArrayGenerator;
@@ -37,11 +38,13 @@ public class ShellSort extends BaseAlgotithm {
     }
 
     public static void main(String[] args) {
-        int n = 100000;
+        int n = 1000000;
         Integer[] array = ArrayGenerator.generatorRandArray(n, n);
         Integer[] copy = Arrays.copyOf(array, array.length);
+        Integer[] copy1 = Arrays.copyOf(array, array.length);
 
         AlgorithmHelper.sort(ShellSort.class, "ShellSort", array);
-        AlgorithmHelper.sort(InsertSort.class,"InsertSort",copy);
+        //AlgorithmHelper.sort(InsertSort.class,"InsertSort",copy);
+        AlgorithmHelper.sort(MergeBu.class,"MergeBu",copy1);
     }
 }

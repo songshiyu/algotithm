@@ -21,7 +21,7 @@ public class SegmentTree<E> {
             data[i] = array[i];
         }
 
-
+        tree = (E[]) new Object[array.length * 4];
     }
 
     public int getSize() {
@@ -31,4 +31,15 @@ public class SegmentTree<E> {
     public E get(int index) {
         return data[index];
     }
+
+    // 返回完全二叉树的数组表示中，一个索引所表示的元素的左孩子节点的索引
+    public int leftChild(int index) {
+        return 2 * index + 1;
+    }
+
+    //返回完全二叉树的数组表示中，一个索引所表示的元素的右孩子节点的索引
+    public int rightChild(int index) {
+        return 2 * index + 2;
+    }
+
 }

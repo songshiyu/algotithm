@@ -203,4 +203,12 @@ public class Array<E> {
     public String toString() {
         return Arrays.toString(data);
     }
+
+    public E getLast() {
+        return get(size - 1);
+    }
+
+    public E getFirst() {
+        return getFirst();
+    }
 }

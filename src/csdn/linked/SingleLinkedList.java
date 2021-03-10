@@ -1,7 +1,7 @@
 package csdn.linked;
 
 /**
- * @description: 单链表
+ * @description: 单链表-不使用虚拟头节点
  * @create: 2021/3/9 08:43:56
  **/
 public class SingleLinkedList<E> {
